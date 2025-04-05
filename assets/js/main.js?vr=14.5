@@ -1,0 +1,209 @@
+'use strict'
+$(document).ready(function () {
+
+    var body = $('body');
+    var bodyParent = $('html');
+
+    /* page load as iframe */
+    if (self !== top) {
+        body.addClass('iframe');
+    } else {
+        body.removeClass('iframe');
+    }
+
+    /* menu open close */
+    $('.menu-btn').on('click', function () {
+        if (body.hasClass('menu-open') === true) {
+            body.removeClass('menu-open');
+            bodyParent.removeClass('menu-open');
+        } else {
+            body.addClass('menu-open');
+            bodyParent.addClass('menu-open');
+        }
+
+        return false;
+    });
+
+    body.on("click", function (e) {
+        if (!$('.sidebar').is(e.target) && $('.sidebar').has(e.target).length === 0) {
+            body.removeClass('menu-open');
+            bodyParent.removeClass('menu-open');
+        }
+
+        return true;
+    });
+
+
+    /* Filter button */
+    $('.filter-btn').on('click', function () {
+        if (body.hasClass('filter-open') === true) {
+            body.removeClass('filter-open');
+        } else {
+            body.addClass('filter-open');
+        }
+
+        return false;
+    });
+    $('.filter-close').on('click', function () {
+        if (body.hasClass('filter-open') === true) {
+            body.removeClass('filter-open');
+        }
+    });
+
+
+    /* menu style switch */
+    $('#menu-pushcontent').on('change', function () {
+        if ($(this).is(':checked') === true) {
+            body.addClass('menu-push-content');
+            body.removeClass('menu-overlay');
+        }
+
+        return false;
+    });
+
+    $('#menu-overlay').on('change', function () {
+        if ($(this).is(':checked') === true) {
+            body.removeClass('menu-push-content');
+            body.addClass('menu-overlay');
+        }
+
+        return false;
+    });
+
+
+    /* back page navigation */
+    $('.back-btn').on('click', function () {
+        window.history.back();
+        return false;
+    });
+
+
+
+    if ($('.footer').length > 0) {
+        /** center button click toggle **/
+        $('.centerbutton .nav-link').on('click', function () {
+            $(this).toggleClass('active')
+        })
+
+    }
+
+    /* scroll y limited container height on page  */
+    var scrollyheight = Number($(window).height() - $('.header').outerHeight() - $('.footer-info').outerHeight()) - 25;
+    $('.scroll-y').height(scrollyheight);
+
+});
+
+
+$(window).on('load', function () {
+    setTimeout(function () {
+        $('.loader-wrap').fadeOut('slow');
+    }, 100);
+
+    /* coverimg */
+    $('.coverimg').each(function () {
+        var imgpath = $(this).find('img');
+        $(this).css('background-image', 'url(' + imgpath.attr('src') + ')');
+        imgpath.hide();
+    })
+
+
+    /* url path on menu */
+    var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
+    $(' .main-menu ul a').each(function () {
+        if (this.href === path) {
+            $(' .main-menu ul a').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
+
+    /* main container min height */
+    $('main').css('min-height', $(window).height());
+
+
+    if ($('.header.position-fixed').length > 0) {
+        $('main').css('padding-top', $('.header').outerHeight() + 1);
+    }
+    if ($('.footer').length > 0) {
+        $('main').css('padding-bottom', $('.footer').outerHeight() + 1);
+    }
+    if ($('.padding-bottom-dynamic').length > 0 && $('.footer').length > 0) {
+        $('.padding-bottom-dynamic').css('padding-bottom', $('.footer').outerHeight() + 1);
+    }
+
+});
+
+
+$(window).on('scroll', function () {
+
+    /* scroll from top and add class */
+    if ($(document).scrollTop() > '10') {
+        $('.header.position-fixed').addClass('active');
+    } else {
+        $('.header.position-fixed').removeClass('active');
+    }
+});
+
+
+$(window).on('resize', function () {
+    /* main container min height */
+    $('main').css('min-height', $(window).height())
+});
+
+
+var TxtType = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+};
+
+TxtType.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+    var that = this;
+    var delta = 200 - Math.random() * 100;
+
+    if (this.isDeleting) { delta /= 2; }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+    }
+
+    setTimeout(function() {
+        that.tick();
+    }, delta);
+};
+
+window.onload = function() {
+    var elements = document.getElementsByClassName('typewrite');
+    for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.04em solid #fff;opacity:.7;}";
+    document.body.appendChild(css);
+};
+

@@ -1,0 +1,3784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Craıc Karaköy QR Menü - QR Menü</title>
+    <meta name="description" content="Craıc Karaköy Restorant Dijital Menü" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link href="https://fonts.bunny.net/css?family=advent-pro:400,600&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="assets/app-7fa4fef5.css" />
+    <link rel="stylesheet" href="assets/app-7fa4fef5.css" />
+    <link href="assets/forms.css" rel="stylesheet" />
+    <link href="assets/font.css" rel="stylesheet" />
+    <link href="assets/support.css?v=3.2.57.0" rel="stylesheet" />
+    <link href="assets/filament-laravel-log-styles.css?v=3.2.1.0" rel="stylesheet" />
+    <link href="assets/driver.css?v=3.2.57.0" rel="stylesheet" />
+    <script src="assets/app-ddee773b.js"></script>
+    <style>
+        :root {
+            --danger-50: 254, 242, 242;
+            --danger-100: 254, 226, 226;
+            --danger-200: 254, 202, 202;
+            --danger-300: 252, 165, 165;
+            --danger-400: 248, 113, 113;
+            --danger-500: 239, 68, 68;
+            --danger-600: 220, 38, 38;
+            --danger-700: 185, 28, 28;
+            --danger-800: 153, 27, 27;
+            --danger-900: 127, 29, 29;
+            --danger-950: 69, 10, 10;
+            --gray-50: 250, 250, 250;
+            --gray-100: 244, 244, 245;
+            --gray-200: 228, 228, 231;
+            --gray-300: 212, 212, 216;
+            --gray-400: 161, 161, 170;
+            --gray-500: 113, 113, 122;
+            --gray-600: 82, 82, 91;
+            --gray-700: 63, 63, 70;
+            --gray-800: 39, 39, 42;
+            --gray-900: 24, 24, 27;
+            --gray-950: 9, 9, 11;
+            --info-50: 239, 246, 255;
+            --info-100: 219, 234, 254;
+            --info-200: 191, 219, 254;
+            --info-300: 147, 197, 253;
+            --info-400: 96, 165, 250;
+            --info-500: 59, 130, 246;
+            --info-600: 37, 99, 235;
+            --info-700: 29, 78, 216;
+            --info-800: 30, 64, 175;
+            --info-900: 30, 58, 138;
+            --info-950: 23, 37, 84;
+            --primary-50: 255, 251, 235;
+            --primary-100: 254, 243, 199;
+            --primary-200: 253, 230, 138;
+            --primary-300: 252, 211, 77;
+            --primary-400: 251, 191, 36;
+            --primary-500: 245, 158, 11;
+            --primary-600: 217, 119, 6;
+            --primary-700: 180, 83, 9;
+            --primary-800: 146, 64, 14;
+            --primary-900: 120, 53, 15;
+            --primary-950: 69, 26, 3;
+            --success-50: 240, 253, 244;
+            --success-100: 220, 252, 231;
+            --success-200: 187, 247, 208;
+            --success-300: 134, 239, 172;
+            --success-400: 74, 222, 128;
+            --success-500: 34, 197, 94;
+            --success-600: 22, 163, 74;
+            --success-700: 21, 128, 61;
+            --success-800: 22, 101, 52;
+            --success-900: 20, 83, 45;
+            --success-950: 5, 46, 22;
+            --warning-50: 255, 251, 235;
+            --warning-100: 254, 243, 199;
+            --warning-200: 253, 230, 138;
+            --warning-300: 252, 211, 77;
+            --warning-400: 251, 191, 36;
+            --warning-500: 245, 158, 11;
+            --warning-600: 217, 119, 6;
+            --warning-700: 180, 83, 9;
+            --warning-800: 146, 64, 14;
+            --warning-900: 120, 53, 15;
+            --warning-950: 69, 26, 3;
+        }
+    </style>
+</head>
+
+<body class="antialiased bg-white font-sans">
+    <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6">
+        <div class="mx-auto max-w-3xl p-6">
+            <div class="flex justify-between items-center mb-5">
+                <img class="w-26 h-24 md:w-36 md:h-36 rounded-full hover:scale-105 duration-1000"
+                    src="assets/craiclogo.png" alt="Craıc Karaköy QR Menü" loading="lazy" />
+                <div class="inline-flex space-x-2">
+                    <div x-data="categorylist">
+                        <div aria-labelledby="category-list.heading" aria-modal="true" role="dialog" x-data="{        isOpen: false,
+
+        livewire: null,
+
+        close: function () {
+            this.isOpen = false
+
+            this.$refs.modalContainer.dispatchEvent(
+                new CustomEvent('modal-closed', { id: 'category-list' }),
+            )
+
+
+        },
+
+        open: function () {
+            this.isOpen = true
+
+
+
+            this.$refs.modalContainer.dispatchEvent(
+                new CustomEvent('modal-opened', { id: 'category-list' }),
+            )
+        },
+    }" x-on:close-modal.window="if ($event.detail.id === 'category-list') close()"
+                            x-on:open-modal.window="if ($event.detail.id === 'category-list') open()"
+                            x-trap.noscroll="isOpen" x-bind:class="{
+        'fi-modal-open': isOpen,
+    }" class="fi-modal inline-block">
+                            <div x-on:click="open" class="fi-modal-trigger flex cursor-pointer">
+                                <svg id="mobileCategoriesIcon"
+                                    class="block w-10 h-10 bg-gray-50 border p-2 border-gray-200 rounded-full"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+                                </svg>
+                            </div>
+                            <div x-cloak x-show="isOpen">
+                                <div aria-hidden="true" x-show="isOpen" x-transition.duration.300ms.opacity
+                                    class="fi-modal-close-overlay fixed inset-0 z-40 bg-gray-950/50 dark:bg-gray-950/75">
+                                </div>
+                                <div class="fixed inset-0 z-40 cursor-pointer">
+                                    <div x-ref="modalContainer" x-on:click.self="
+                        document.activeElement.selectionStart === undefined &&
+                            document.activeElement.selectionEnd === undefined &&
+                            $dispatch(&#039;close-modal&#039;, { id: &#039;category-list&#039; })
+                    " class="relative grid min-h-full grid-rows-[1fr_auto_1fr] justify-items-center sm:grid-rows-[1fr_auto_3fr]"
+                                        autofocus="false">
+                                        <div x-data="{ isShown: false }" x-init="
+                        $nextTick(() => {
+                            isShown = isOpen
+                            $watch('isOpen', () => (isShown = isOpen))
+                        })
+                    " x-on:keydown.window.escape="$dispatch(&#039;close-modal&#039;, { id: &#039;category-list&#039; })"
+                                            x-show="isShown" x-transition:enter="duration-300"
+                                            x-transition:leave="duration-300"
+                                            x-transition:enter-start="translate-x-full rtl:-translate-x-full"
+                                            x-transition:enter-end="translate-x-0"
+                                            x-transition:leave-start="translate-x-0"
+                                            x-transition:leave-end="translate-x-full rtl:-translate-x-full"
+                                            class="fi-modal-window pointer-events-auto relative row-start-2 flex w-full cursor-default flex-col bg-white shadow-xl ring-1 ring-gray-950/5 dark:bg-gray-900 dark:ring-white/10 fi-modal-slide-over-window ms-auto overflow-y-auto h-[100dvh] max-w-xl">
+                                            <div class="fi-modal-header flex px-6 pt-6 flex-col">
+                                                <div class="absolute end-6 top-6">
+                                                    <button style="
+                                --c-300: var(--gray-300);
+                                --c-400: var(--gray-400);
+                                --c-500: var(--gray-500);
+                                --c-600: var(--gray-600);
+                              " class="fi-icon-btn relative flex items-center justify-center rounded-lg outline-none transition duration-75 focus-visible:ring-2 disabled:pointer-events-none disabled:opacity-70 -m-1.5 h-9 w-9 text-gray-400 hover:text-gray-500 focus-visible:ring-primary-600 dark:text-gray-500 dark:hover:text-gray-400 dark:focus-visible:ring-primary-500 fi-color-gray fi-modal-close-btn"
+                                                        title="Kapat" type="button" tabindex="-1"
+                                                        x-on:click="$dispatch(&#039;close-modal&#039;, { id: &#039;category-list&#039; })">
+                                                        <span class="sr-only">Kapat </span>
+                                                        <svg class="fi-icon-btn-icon h-6 w-6"
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                            aria-hidden="true" data-slot="icon">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                d="M6 18 18 6M6 6l12 12" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="text-center">
+                                                    <h2
+                                                        class="fi-modal-heading text-base font-semibold leading-6 text-gray-950 dark:text-white">
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="fi-modal-content flex flex-col gap-y-4 py-6 flex-1 px-6">
+                                                <ul role="list" class="divide-y divide-gray-100">
+                                                    <template x-for="(category, slug) in $store.menu.categories"
+                                                        :key="slug">
+                                                        <li @click="selectCategory(category.name, slug);$dispatch('close-modal', { id: 'category-list' })"
+                                                            :class="{
+                           '!border-t-0': category.name === $store.menu.initialCategory}"
+                                                            class="relative flex justify-between gap-x-6 py-5">
+                                                            <div class="flex min-w-0 gap-x-4">
+                                                                <img x-show="category.image" x-cloak
+                                                                    class="h-12 w-12 flex-none rounded-full bg-gray-50"
+                                                                    :src="category.image" alt />
+                                                                <div class="min-w-0 flex-auto">
+                                                                    <p
+                                                                        class="text-sm font-semibold leading-6 text-gray-900 justify-center items-center">
+                                                                        <a id="category-name">
+                                                                            <span
+                                                                                class="absolute inset-x-0 -top-px bottom-0"></span>
+                                                                            <span x-text="category.name"></span>
+                                                                        </a>
+                                                                    </p>
+                                                                    <p
+                                                                        class="mt-1 flex text-xs leading-5 text-gray-500">
+                                                                        <a x-text="category.excerpt+'...'"
+                                                                            class="relative truncate hover:underline"></a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex shrink-0 items-center gap-x-4">
+                                                                <svg class="h-5 w-5 flex-none text-gray-400"
+                                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                                    aria-hidden="true">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                                                        clip-rule="evenodd" />
+                                                                </svg>
+                                                            </div>
+                                                        </li>
+                                                    </template>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div x-data="wifi">
+                            <div aria-labelledby=".heading" aria-modal="true" role="dialog" x-data="{
+        isOpen: false,
+
+        livewire: null,
+
+        close: function () {
+            this.isOpen = false
+
+            this.$refs.modalContainer.dispatchEvent(
+                new CustomEvent('modal-closed', { id: '' }),
+            )
+
+
+        },
+
+        open: function () {
+            this.isOpen = true
+
+
+
+            this.$refs.modalContainer.dispatchEvent(
+                new CustomEvent('modal-opened', { id: '' }),
+            )
+        },
+    }" x-trap.noscroll="isOpen" x-bind:class="{
+        'fi-modal-open': isOpen,
+    }" class="fi-modal inline-block">
+                                <div x-on:click="open" class="fi-modal-trigger flex cursor-pointer">
+                                    <svg id="wifi" title="Wifi Şifresi"
+                                        class="w-10 h-10 bg-gray-50 border p-2 border-gray-200 rounded-full"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z" />
+                                    </svg>
+                                </div>
+                                <div x-cloak x-show="isOpen">
+                                    <div aria-hidden="true" x-show="isOpen" x-transition.duration.300ms.opacity
+                                        class="fi-modal-close-overlay fixed inset-0 z-40 bg-gray-950/50 dark:bg-gray-950/75">
+                                    </div>
+                                    <div class="fixed inset-0 z-40 overflow-y-auto cursor-pointer">
+                                        <div x-ref="modalContainer" x-on:click.self="
+                        document.activeElement.selectionStart === undefined &&
+                            document.activeElement.selectionEnd === undefined &&
+                            close()
+                    " class="relative grid min-h-full grid-rows-[1fr_auto_1fr] justify-items-center sm:grid-rows-[1fr_auto_3fr] p-4">
+                                            <div x-data="{ isShown: false }" x-init="
+                        $nextTick(() => {
+                            isShown = isOpen
+                            $watch('isOpen', () => (isShown = isOpen))
+                        })
+                    " x-on:keydown.window.escape="close()" x-show="isShown" x-transition:enter="duration-300"
+                                                x-transition:leave="duration-300"
+                                                x-transition:enter-start="scale-95 opacity-0"
+                                                x-transition:enter-end="scale-100 opacity-100"
+                                                x-transition:leave-start="scale-100 opacity-100"
+                                                x-transition:leave-end="scale-95 opacity-0"
+                                                class="fi-modal-window pointer-events-auto relative row-start-2 flex w-full cursor-default flex-col bg-white shadow-xl ring-1 ring-gray-950/5 dark:bg-gray-900 dark:ring-white/10 mx-auto rounded-xl max-w-sm">
+                                                <div class="fi-modal-header flex px-6 pt-6 flex-col">
+                                                    <div class="absolute end-4 top-4">
+                                                        <button style="
+                                  --c-300: var(--gray-300);
+                                  --c-400: var(--gray-400);
+                                  --c-500: var(--gray-500);
+                                  --c-600: var(--gray-600);
+                                " class="fi-icon-btn relative flex items-center justify-center rounded-lg outline-none transition duration-75 focus-visible:ring-2 disabled:pointer-events-none disabled:opacity-70 -m-1.5 h-9 w-9 text-gray-400 hover:text-gray-500 focus-visible:ring-primary-600 dark:text-gray-500 dark:hover:text-gray-400 dark:focus-visible:ring-primary-500 fi-color-gray fi-modal-close-btn"
+                                                            title="Kapat" type="button" tabindex="-1"
+                                                            x-on:click="close()">
+                                                            <span class="sr-only">Kapat </span>
+                                                            <svg class="fi-icon-btn-icon h-6 w-6"
+                                                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                viewBox="0 0 24 24" stroke-width="1.5"
+                                                                stroke="currentColor" aria-hidden="true"
+                                                                data-slot="icon">
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    d="M6 18 18 6M6 6l12 12" />
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="mb-5 flex items-center justify-center">
+                                                        <div
+                                                            class="rounded-full bg-gray-100 dark:bg-gray-500/20 fi-color-gray p-3">
+                                                            <svg class="fi-modal-icon h-6 w-6 text-gray-500 dark:text-gray-400"
+                                                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                viewBox="0 0 24 24" stroke-width="1.5"
+                                                                stroke="currentColor" aria-hidden="true"
+                                                                data-slot="icon">
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <h2
+                                                            class="fi-modal-heading text-base font-semibold leading-6 text-gray-950 dark:text-white">
+                                                            <span
+                                                                @click="copy(document.getElementById('wifiPassword').textContent)">Wifi
+                                                                Şifresi
+                                                            </span>
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class="fi-modal-content flex flex-col gap-y-4 py-6 px-6">
+                                                    <div class="flex justify-center"
+                                                        @click="copy(document.getElementById('wifiPassword').textContent)">
+                                                        <p id="wifiPassword" class="mb-8 text-center dark:text-white">
+                                                            Please ask the waiters as changes can be made instantly.
+                                                        </p>
+                                                        <svg class="w-5 h-5 mt-0.5 mb-0.5 ml-2"
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                            aria-hidden="true" data-slot="icon">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div x-data="menu" id="menu">
+                    <div class="mb-8 relative">
+                        <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-6">
+                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+                        </div>
+                        <input type="text" name="search" id="search" x-model="search" @input="updateFilteredProducts"
+                            class="w-full p-5 pl-16 rounded-full border border-gray-300 focus:border-teal-500 focus:ring-teal-500 text-sm"
+                            placeholder="Menüde ara..." />
+                    </div>
+                    <div>
+                        <div
+                            class="mb-8 overflow-x-auto container-snap whitespace-nowrap border-b border-gray-200 pb-4">
+                            <div class="flex px-2 py-2">
+                                <template x-for="(category, key) in $store.menu.categories" :key="key">
+                                    <a href="#" :id="key" x-text="category.name"
+                                        @click="activeCategory = category.name; updateFilteredProducts()" :class="{
+                           'ml-6': category.name !== $store.menu.initialCategory,
+                           'font-semibold text-gray-800/100': activeCategory === category.name}"
+                                        class="ml-2 text-xl text-gray-400/75 hover:text-green-600 hover:font-semibold"></a>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <template x-for="product in filteredProducts" :key="product.slug">
+                            <div
+                                class="block md:hidden space-y-8 hover:cursor-pointer hover:bg-gray-50 hover:-translate-y-2 hover:rounded-xl hover:-px-4 hover:pt-4 transition-all duration-700 ease-in-out">
+                                <div
+                                    class="flex justify-between items-center mb-8 border-b border-gray-100 pb-4 last:border-0">
+                                    <div class="flex items-center">
+                                        <div x-show="product.image" x-cloak
+                                            class="max-w-[112px] max-h-[112px] min-w-[112px] min-h-[112px]">
+                                            <img :src="product.image" :alt="product.title"
+                                                class="w-28 h-28 rounded-full object-cover" />
+                                        </div>
+                                        <div :class="{'ml-2': product.image}" class="pl-4 sm:pl-6 md:pl-8">
+                                            <h3 x-text="product.title" class="text-xl font-bold mb-2"></h3>
+                                            <p x-show="product.ingredients" x-cloak
+                                                class="text-sm text-gray-400 text-left" x-text="product.ingredients">
+                                            </p>
+                                            <div class>
+                                                <p :class="{'mt-3': product.ingredients}"
+                                                    class="flex items-center text-sm font-semibold">
+                                                    <span x-text="product.price_parts[0]+','"
+                                                        class="font-extrabold"></span>
+                                                    <span x-text="product.price_parts[1]"
+                                                        class="text-sm font-medium"></span>
+                                                    <span class="ml-1 font-medium text-sm">₺</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                        <template x-for="product in filteredProducts" :key="product.slug">
+                            <div :class="{'hover:px-6': !product.image}"
+                                class="hidden md:block space-y-8 hover:cursor-pointer hover:bg-gray-50 hover:rounded-xl hover:-mx-8 hover:duration-1000">
+                                <div
+                                    class="flex justify-between items-center mb-8 border-b border-gray-100 pb-4 last:border-0">
+                                    <div class="flex items-center pt-4">
+                                        <div x-show="product.image" x-cloak
+                                            class="hidden sm:block min-w-[136px] min-h-[136px] max-w-[136px] max-h-[136px]">
+                                            <img :src="product.image" :alt="product.title"
+                                                class="w-32 h-32 rounded-full object-cover" />
+                                        </div>
+                                        <div :class="{'pl-2 sm:pl-4 ml-2': product.image}" class="pr-16">
+                                            <h3 x-text="product.title" class="text-xl font-bold mb-2"></h3>
+                                            <p x-cloak x-show="product.ingredients"
+                                                class="text-sm text-gray-400 text-left" x-text="product.ingredients">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class>
+                                        <p :class="{'mt-3': product.ingredients}"
+                                            class="flex items-center text-sm font-semibold">
+                                            <span x-text="product.price_parts[0]+','"
+                                                class="font-extrabold scale-110"></span>
+                                            <span x-text="product.price_parts[1]"
+                                                class="mt-0.5 text-sm font-medium"></span>
+                                            <span class="ml-1 font-medium mt-0.5 text-sm">₺</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                        <div class="!mt-16 !mb-6">
+                            <template x-if="filteredProducts.length === 0">
+                                <div class="text-center">
+                                    <svg class="mx-auto h-12 w-12 text-teal-400" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <h3 class="mt-2 text-sm font-medium text-gray-900">
+                                        Ürün bulunamadı
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">
+                                        Aradığınız ürün bulunamadı.
+                                    </p>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white">
+                <div class="mx-auto max-w-7xl overflow-hidden pt-8 px-6 lg:px-8 py-16 sm:py-20">
+                    <p class="text-center text-xs leading-5 text-gray-500">
+                        &copy;2025
+                        <a href="https://xtechnology.com.tr" target="_blank"
+                            class="text-yellow-500 hover:text-yellow-400 font-semibold">XTechnology</a>
+                        . Tüm hakları saklıdır.
+                    </p>
+                </div>
+            </footer>
+        </div>
+        <div wire:snapshot='{"data":{"isFilamentNotificationsComponent":true,"notifications":[[],{"class":"Filament\\Notifications\\Collection","s":"wrbl"}]},"memo":{"id":"B6W8htDg5ULIKj6zClXr","name":"notifications","path":"restaurants\/demo","method":"GET","children":[],"scripts":[],"assets":[],"errors":[],"locale":"tr"},"checksum":"76d445dcfaecc016dc78ccd2a51564c2c9b801d9ce717704870628fa5a2023f6"}'
+            wire:effects='{"listeners":["notificationsSent","notificationSent","notificationClosed"]}'
+            wire:id="B6W8htDg5ULIKj6zClXr">
+            <div class="fi-no pointer-events-none fixed inset-4 z-50 mx-auto flex gap-3 items-end flex-col-reverse justify-end"
+                role="status">
+                <!--[if BLOCK]> <![endif]-->
+                <!--[if ENDBLOCK]> <![endif]-->
+            </div>
+            <!--[if BLOCK]> <![endif]-->
+            <!--[if ENDBLOCK]> <![endif]-->
+        </div>
+        <script>
+            window.filamentData = [];
+        </script>
+        <script src="assets/notifications.js?v=3.2.57.0"></script>
+        <script src="assets/async-alpine.js?v=3.2.57.0"></script>
+        <script src="assets/support.js?v=3.2.57.0"></script>
+        <script src="assets/driver.js?v=3.2.57.0"></script>
+        <script>
+            document.addEventListener("alpine:init", () => {
+                Alpine.data("menu", () => ({
+                    products: Alpine.store("menu").products,
+                    activeCategory: Alpine.store("menu").initialCategory,
+                    search: "",
+                    filteredProducts: [],
+
+                    init() {
+                        Alpine.store("categories").activeCategory = this.activeCategory;
+
+                        this.updateFilteredProducts();
+
+                        // Listen for changes in the categories store
+                        this.$watch("$store.categories.activeCategory", (newCategory) => {
+                            this.activeCategory = newCategory;
+                            this.updateFilteredProducts();
+                        });
+                    },
+
+                    updateFilteredProducts() {
+                        this.filteredProducts = this.products
+                            .filter((product) => {
+                                // If search query exists, only show products that match the search
+                                if (this.search.trim()) {
+                                    return product.title
+                                        .toLowerCase()
+                                        .includes(this.search.toLowerCase());
+                                }
+
+                                // If no search query, only show products that match the active category
+                                return product.category.name === this.activeCategory;
+                            })
+                            .sort((a, b) => b.is_pinned - a.is_pinned);
+                    },
+                }));
+
+                // This store is to be used from the top navigation category list
+                Alpine.store("categories", {
+                    activeCategory: "",
+
+                    setActiveCategory(newCategory) {
+                        this.activeCategory = newCategory;
+                    },
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener('alpine:init', () => {
+                Alpine.store('menu', {
+                    products: [{
+                        "ingredients": "Bergama tulumu, Kars gravyer, smoked Circassian cheese, gouda, grilled halloumi, dried figs, dried apricots, grapes, walnuts, grissini",
+                        "is_featured": false,
+                        "is_pinned": false,
+                        "price": "550.00",
+                        "slug": "urun1",
+                        "title": "CHEESE PLATTER",
+                        "image":
+                            "img/peynirtabagi.webp",
+                        "price_parts": [550, 0],
+                        "category": {
+                            "name": "Entree/Snack",
+                            "slug": "basla"
+                        }
+                    },
+                    {
+                        "title": "MÜCVER",
+                        "category": {
+                            "name": "Entree/Snack",
+                            "slug": "basla"
+                        },
+                        "ingredients": "Fresh zucchini, carrot and fresh herbs patties with yogurt sauce",
+                        "price": "380",
+                        "slug": "urun2",
+                        "image": "img/cl.webp",
+                        "price_parts": [380, 0],
+                    },
+                    {
+                        "title": "SPICY FRENCH FRIES",
+                        "category": {
+                            "name": "Entree/Snack",
+                            "slug": "basla"
+                        },
+                        "ingredients": "With Cajun spice",
+                        "price": "310",
+                        "image": "img/cl.webp",
+                        "price_parts": [310, 0]
+                    },
+                    {
+                        "title": "CRISPY CHICKEN PIECES",
+                        "category": {
+                            "name": "Entree/Snack",
+                            "slug": "basla"
+                        },
+                        "ingredients": "Crispy chicken pieces, french fries, honey mustard sauce, sriracha special sauce",
+                        "price": "379",
+                        "slug": "urun4",
+                        "image": "img/cl.webp",
+                        "price_parts": [379, 0]
+                    },
+
+                    {
+                        "title": "ORAYA CRISPY (for 2 people)",
+                        "category": {
+                            "name": "Entree/Snack",
+                            "slug": "basla"
+                        },
+                        "ingredients": "Frankfurter beef sausage, sesame coated crispy chicken, crispy jalapeño peppers, mozzarella sticks, crispy onions, spring rolls, french fries; with honey mustard & sweet-spicy sauce",
+                        "price": "540",
+                        "slug": "urun5",
+                        "image": "img/cl.webp",
+                        "price_parts": [540, 0]
+                    },
+                    {
+                        "title": "TRUFLE PARMESAN POTATOES",
+                        "category": {
+                            "name": "Entree/Snack",
+                            "slug": "basla"
+                        },
+                        "ingredients": "Cajun spice, truffle sauce, parmesan and parsley",
+                        "price": "349",
+                        "slug": "urun6",
+                        "image": "img/cl.webp",
+                        "price_parts": [349, 0]
+                    },
+                    {
+                        "title": "GRILLED SHRIMP SHISH",
+                        "category": {
+                            "name": "Entree/Snack",
+                            "slug": "basla"
+                        },
+                        "ingredients": "Arugula, red onion and tomato",
+                        "price": "550",
+                        "slug": "urun7",
+                        "image": "img/cl.webp",
+                        "price_parts": [550, 0]
+                    },
+
+                    {
+                        "title": "CHICKEN CAESAR SALAD",
+                        "category": {
+                            "name": "Salads",
+                            "slug": "salad"
+                        },
+                        "ingredients": "Lettuce, grilled chicken pieces, cherry tomatoes, pita croutons, corn kernels, parmesan, with caesar dressing",
+                        "price": 450,
+                        "slug": "urun8",
+                        "image":
+                            "img/sezartavuklu.webp",
+                        "price_parts": [450, 0]
+                    },
+                    {
+                        "title": "FRIED HALLUM CHEESE SALAD",
+                        "category": {
+                            "name": "Salads",
+                            "slug": "salad"
+                        },
+                        "ingredients": "Fried halloumi cheese, tabbouleh greens with mint and parsley, chickpeas, bulgur, green lentils, pomegranate seeds, carrots, cucumber, capia pepper, olive oil—lemon dressing",
+                        "price": 420,
+                        "slug": "urun9",
+                        "image": "img/kizarmishelim.webp",
+                        "price_parts": [420, 0]
+                    },
+                    {
+                        "title": "BEETCH SALAD WITH GOAT CHEESE",
+                        "category": {
+                            "name": "Salads",
+                            "slug": "salad"
+                        },
+                        "ingredients": "Arugula, marinated beetroot, goat cheese & olive paste millefeuille, walnuts, strawberries; with mustard sauce",
+                        "price": 430,
+                        "slug": "urun10",
+                        "image": "img/cl.webp",
+                        "price_parts": [430, 0]
+                    },
+                    {
+                        "title": "MEATBALL BOWL",
+                        "category": {
+                            "name": "Bowl",
+                            "slug": "bowl"
+                        },
+                        "ingredients": "Grilled meatballs, walnuts, carrots, capia peppers, eggplant, cauliflower, mixed greens, zucchini, legume mix, avocadoado, corn kernels, oil lemon sauce",
+                        "price": 465,
+                        "slug": "urun11",
+                        "image": "img/koftebawl.webp",
+                        "price_parts": [465, 0]
+                    },
+                    {
+                        "title": "CHICKEN BOWL",
+                        "category": {
+                            "name": "Bowl",
+                            "slug": "bowl"
+                        },
+                        "ingredients": "Grilled chicken pieces, avocado, basmati rice, mexican beans, mixed greens, corn, carrots, quinoa, red beets; with oil lemon sauce",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 435,
+                        "slug": "urun12",
+                        "image": "img/cl.webp",
+                        "price_parts": [435, 0]
+                    },
+                    {
+                        "title": "PENNE ARABIATA",
+                        "category": {
+                            "name": "Pastas",
+                            "slug": "pastas"
+                        },
+                        "ingredients": "With spicy tomato sauce and parmesan",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 360,
+                        "slug": "urun13",
+                        "image": "img/penne.jpeg",
+                        "price_parts": [360, 0]
+                    },
+                    {
+                        "title": "FETTUCINI ALFREDO",
+                        "category": {
+                            "name": "Pastas",
+                            "slug": "pastas"
+                        },
+                        "ingredients": "With cream sauce",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 390,
+                        "slug": "urun14",
+                        "image": "img/cl.webp",
+                        "price_parts": [390, 0]
+                    },
+                    {
+                        "title": "SPAGHETTI WITH BOLONEZ SAUCE",
+                        "category": {
+                            "name": "Pastas",
+                            "slug": "pastas"
+                        },
+                        "ingredients": "Craic bolognese sauce and with parmesan",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 430,
+                        "slug": "urun15",
+                        "image": "img/cl.webp",
+                        "price_parts": [430, 0]
+                    },
+                    {
+                        "title": "SEAFOOD PAPARDELLE",
+                        "category": {
+                            "name": "Pastas",
+                            "slug": "pastas"
+                        },
+                        "ingredients": "Mussels, shrimps, salmon, calamari with tomato sauce",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 580,
+                        "slug": "urun16",
+                        "image": "img/cl.webp",
+                        "price_parts": [580, 0]
+                    },
+                    {
+                        "title": "CRAIC BURGER",
+                        "category": {
+                            "name": "Burger",
+                            "slug": "burger"
+                        },
+                        "ingredients": "180 gr burger patty, beef bacon, shoestring potatoes, cheddar cheese, corn on the cob, truffle mayo sauce, spicy fries",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 510,
+                        "slug": "urun17",
+                        "image": "img/burger.jpg",
+                        "price_parts": [510, 0]
+                    },
+                    {
+                        "title": "MEXICAN BURGER",
+                        "category": {
+                            "name": "Burger",
+                            "slug": "burger"
+                        },
+                        "ingredients": "180 gr burger patty, tomato, iceberg, jalapeno pepper, corn on the cob, hot burger sauce, spicy fries,",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 460,
+                        "slug": "urun18",
+                        "image": "img/cl.webp",
+                        "price_parts": [460, 0]
+                    },
+                    {
+                        "title": "MUSHROOM BURGER",
+                        "category": {
+                            "name": "Burger",
+                            "slug": "burger"
+                        },
+                        "ingredients": "180 gr. burger patty, cheddar cheese, caramelized onion and grilled oyster mushrooms, corn on the cob, burger sauce, spicy potato fries,",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 475,
+                        "slug": "urun19",
+                        "image": "img/cl.webp",
+                        "price_parts": [475, 0]
+                    },
+                    {
+                        "title": "MILAN STYLE SCHNITZEL",
+                        "category": {
+                            "name": "Main Dishes",
+                            "slug": "main dishes"
+                        },
+                        "ingredients": "Breaded marinated chicken, mustard potato salad, arugula, parmesan, cherry tomatoes, steamed fresh vegetables, with homemade wasabi mayonnaise sauce",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 490,
+                        "slug": "urun20",
+                        "image": "img/milano.webp",
+                        "price_parts": [490, 0]
+                    },
+                    {
+                        "title": "CAFE DE PARIS ENTRICOT WITH SAUCE",
+                        "category": {
+                            "name": "Main Dishes",
+                            "slug": "main dishes"
+                        },
+                        "ingredients": "With sautéed vegetables and cafe de paris sauce",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 705,
+                        "slug": "urun21",
+                        "image": "img/cl.webp",
+                        "price_parts": [705, 0]
+                    },
+                    {
+                        "title": "GRILLED CHICKEN CHISEL",
+                        "category": {
+                            "name": "Main Dishes",
+                            "slug": "main dishes"
+                        },
+                        "ingredients": "Marinated chicken chops, steamed fresh vegetables, turmeric basmati rice and homemade yogurt tahini sauce",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 470,
+                        "slug": "urun22",
+                        "image": "img/cl.webp",
+                        "price_parts": [470, 0]
+                    },
+                    {
+                        "title": "GRILLED MEATBALLS",
+
+                        "category": {
+                            "name": "Main Dishes",
+                            "slug": "main dishes"
+                        },
+                        "ingredients": "Grilled meatballs on homemade brioche bread, with oven-roasted tomatoes, turmeric basmati rice and spicy French fries",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 515,
+                        "slug": "urun23",
+                        "image": "img/cl.webp",
+                        "price_parts": [515, 0]
+                    },
+                    {
+                        "title": "SALMON",
+                        "category": {
+                            "name": "Main Dishes",
+                            "slug": "main dishes"
+                        },
+                        "ingredients": "Boiled vegetables with buttery mushroom sauce",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 770,
+                        "slug": "urun24",
+                        "image": "img/cl.webp",
+                        "price_parts": [770, 0]
+                    },
+                    {
+                        "title": "TIRAMISU",
+                        "category": {
+                            "name": "Desserts",
+                            "slug": "desserts"
+                        },
+                        "ingredients": "Tiramisu prepared with a craic twist, with popcorn and crumble",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 295,
+                        "slug": "urun25",
+                        "image": "img/tiramisu.webp",
+                        "price_parts": [295, 0]
+                    },
+                    {
+                        "title": "SAN SEBASTIAN",
+                        "category": {
+                            "name": "Desserts",
+                            "slug": "desserts"
+                        },
+                        "ingredients": "With chocolate sauce",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 315,
+                        "slug": "urun26",
+                        "image": "img/cl.webp",
+                        "price_parts": [315, 0]
+                    },
+                    {
+                        "title": "FRUIT PLATE",
+                        "category": {
+                            "name": "Desserts",
+                            "slug": "desserts"
+                        },
+                        "ingredients": "Seasonal Fruits ",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 365,
+                        "slug": "urun27",
+                        "image": "img/cl.webp",
+                        "price_parts": [365, 0]
+                    },
+                    {
+                        "title": "MR. LONG",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 550,
+                        "slug": "urun28",
+                        "image": "img/mr.jpg",
+                        "price_parts": [550, 0]
+                    },
+                    {
+                        "title": "Vodka, Gin, Tequila, Rum, Cointreau, Lemon juice, Cola",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun29",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "APEROL SPRITZ",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 525,
+                        "slug": "urun30",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "Aperol, Prosecco, Soda",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun31",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "Whiskey SOUR",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 525,
+                        "slug": "urun32",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "Bourbon Whiskey, Egg White, Simple Syrup, Lemon Juice",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun33",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "ESPRESSO MARTINI",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 525,
+                        "slug": "urun34",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "Vodka, Kahlua, Vanilla Syrup, Espresso",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun35",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "MARGARITA",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 525,
+                        "slug": "urun36",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "Tequila, Cointreau, Lemon Juice",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun37",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "LYNCHBURG LEMONADE",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 525,
+                        "slug": "urun38",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "Jack Daniels, Cointreau, Sweet&Sour Sauce, Sprite",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun39",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "MOJITO",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 525,
+                        "slug": "urun40",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "Rum, Simple syrup, Mint, Lime, Soda",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun41",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "COSMOPOLITAN",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 525,
+                        "slug": "urun42",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "Vodka, Cointreau , Lemon Juice , Cranberry Juice",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun43",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "NEGRONI",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 525,
+                        "slug": "urun44",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "Gin, Campari, Vermouth",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun45",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "OLD FASHION",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 525,
+                        "slug": "urun46",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "Bourbon Whiskey, Angostura Bitter,Simple Syrup",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun47",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "MANHATTAN",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 525,
+                        "slug": "urun48",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "Whiskey, Vermouth, Angostura Bitter, Cherry",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun49",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "AMARETTO SOUR",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 525,
+                        "slug": "urun50",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "Amaretto, Egg White, Simple Syrup, Lemon Juice, Orange Juice",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun51",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "CHILI PASSION",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 525,
+                        "slug": "urun52",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "Tequila, Cointreau, Passion fruit, Sweet&Sour Sauce",
+                        "category": {
+                            "name": "Classic Cocktails",
+                            "slug": "ccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun53",
+                        "image": "img/cl.webp",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "CRAIC KARAKÖY",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "", "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun54",
+                        "image": "img/sign.jpeg",
+                        "price_parts": [525, 0]
+                    },
+                    {
+                        "title": "Gin, Drambuie, Safari, Passion fruit, Sweet&Sour Sauce",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 575,
+                        "slug": "urun55",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "ART NOUVEAU",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun56",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "Green Tea & Earl Grey infused Gin, Cointreau, Orange Marmalade, Lime Juice, Soda",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 575,
+                        "slug": "urun57",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "MAIDENS TOWER",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun58",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "Rum, Amaretto, Malibu, Strawberry Sauce, Orgeat, Pineapple Juice",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 575,
+                        "slug": "urun59",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "GOLDEN HOUR",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun60",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "Vanilla & Fig infused Bourbon Whiskey, Black Rum, Ginger Sauce, Ginger Ale",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 575,
+                        "slug": "urun61",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "LAVINIA",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun62",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "Vodka, Aperol, Lemoncello, Lavender sauce, Sweet & Sour sauce ",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 575,
+                        "slug": "urun63",
+                        "image": "img/limoncello.jpeg",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "BLACK CHERRY",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun64",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "Black Rum, Chambord, Orange Aromatic Bitters, Egg White, Lime Juice, Simple Syrup",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 575,
+                        "slug": "urun65",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "AFTER LIFE",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun66",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "Hibiscus infused Vodka, Southern Comfort, Maraschino Liqueur, Grape, Sweet Basil, Sweet&Sour Sauce",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 575,
+                        "slug": "urun67",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "Whiskey GUM",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun68",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "Kahveli Skinos Shot, Biberiye ve Kahve Aromalı Single Malt Whiskey",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun69",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "GALATA SOUR",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun70",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "Vodka, Elderflower, Basil, Cucumber, Lemongrass Cordial, Lime, Sweet & Sour Sauce",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 575,
+                        "slug": "urun71",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "GREEN MAGIC",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun72",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "Gin, Sweet&sour sauce, Sorrel, Lime juice, Cucumber",
+                        "category": {
+                            "name": "Signature Cocktails",
+                            "slug": "scocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun73",
+                        "image": "img/cl.webp",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "ADA TEA",
+                        "category": {
+                            "name": "Herbal Teas",
+                            "slug": "herbal teas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 135,
+                        "slug": "urun74",
+                        "image": "img/adacay.webp",
+                        "price_parts": [135, 0]
+                    },
+                    {
+                        "title": "DAMOMILE TEA",
+                        "category": {
+                            "name": "Herbal Teas",
+                            "slug": "herbal teas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 135,
+                        "slug": "urun75",
+                        "image": "img/papatya-cayi.webp",
+                        "price_parts": [135, 0]
+                    },
+                    {
+                        "title": "MINT LEMON",
+                        "category": {
+                            "name": "Herbal Teas",
+                            "slug": "herbal teas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 135,
+                        "slug": "urun76",
+                        "image": "img/cl.webp",
+                        "price_parts": [135, 0]
+                    },
+                    {
+                        "title": "WINTER TEA",
+                        "category": {
+                            "name": "Herbal Teas",
+                            "slug": "herbal teas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 135,
+                        "slug": "urun77",
+                        "image": "img/cl.webp",
+                        "price_parts": [135, 0]
+                    },
+                    {
+                        "title": "JASMINE GREEN TEA",
+                        "category": {
+                            "name": "Herbal Teas",
+                            "slug": "herbal teas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 135,
+                        "slug": "urun78",
+                        "image": "img/cl.webp",
+                        "price_parts": [135, 0]
+                    },
+                    {
+                        "title": "LINDEN",
+                        "category": {
+                            "name": "Herbal Teas",
+                            "slug": "herbal teas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 135,
+                        "slug": "urun79",
+                        "image": "img/cl.webp",
+                        "price_parts": [135, 0]
+                    },
+                    {
+                        "title": "THIN WAISTED SPECIAL BREWED TEA",
+                        "category": {
+                            "name": "Herbal Teas",
+                            "slug": "herbal teas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 65,
+                        "slug": "urun80",
+                        "image": "img/cl.webp",
+                        "price_parts": [65, 0]
+                    },
+                    {
+                        "title": "CUP OF TEA",
+                        "category": {
+                            "name": "Herbal Teas",
+                            "slug": "herbal teas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 85,
+                        "slug": "urun81",
+                        "image": "img/cl.webp",
+                        "price_parts": [85, 0]
+                    },
+                    {
+                        "title": "COCA COLA CLASSIC 300 ML",
+                        "category": {
+                            "name": "Soft Drinks",
+                            "slug": "soft drinks"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 105,
+                        "slug": "urun82",
+                        "image": "img/kola.webp",
+                        "price_parts": [105, 0]
+                    },
+                    {
+                        "title": "COCA COLA ZERO 300 ML",
+                        "category": {
+                            "name": "Soft Drinks",
+                            "slug": "soft drinks"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 105,
+                        "slug": "urun83",
+                        "image": "img/kola2.webp",
+                        "price_parts": [105, 0]
+                    },
+                    {
+                        "title": "FANTA 300ML",
+                        "category": {
+                            "name": "Soft Drinks",
+                            "slug": "soft drinks"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 105,
+                        "slug": "urun84",
+                        "image": "img/fanta.webp",
+                        "price_parts": [105, 0]
+                    },
+                    {
+                        "title": "SPRITE 300 ML",
+                        "category": {
+                            "name": "Soft Drinks",
+                            "slug": "soft drinks"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 105,
+                        "slug": "urun85",
+                        "image": "img/cl.webp",
+                        "price_parts": [105, 0]
+                    },
+                    {
+                        "title": "SCHWEPPES TONIC 250 ML",
+                        "category": {
+                            "name": "Soft Drinks",
+                            "slug": "soft drinks"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 110,
+                        "slug": "urun86",
+                        "image": "img/cl.webp",
+                        "price_parts": [110, 0]
+                    },
+                    {
+                        "title": "SIRMA WATER 330 ML",
+                        "category": {
+                            "name": "Soft drinks",
+                            "slug": "soft drinks"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 65,
+                        "slug": "urun87",
+                        "image": "img/cl.webp",
+                        "price_parts": [65, 0]
+                    },
+                    {
+                        "title": "SIRMA WATER 750 ML",
+                        "category": {
+                            "name": "Soft Drinks",
+                            "slug": "soft drinks"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 110,
+                        "slug": "urun88",
+                        "image": "img/cl.webp",
+                        "price_parts": [110, 0]
+                    },
+                    {
+                        "title": "SIRMA SODA 330 ML",
+                        "category": {
+                            "name": "Soft Drinks",
+                            "slug": "soft drinks"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 79,
+                        "slug": "urun89",
+                        "image": "img/cl.webp",
+                        "price_parts": [79, 0]
+                    },
+                    {
+                        "title": "SIRMA SODA 750 ML",
+                        "category": {
+                            "name": "Soft Drinks",
+                            "slug": "soft drinks"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 135,
+                        "slug": "urun90",
+                        "image": "img/cl.webp",
+                        "price_parts": [135, 0]
+                    },
+                    {
+                        "title": "S.PELLEGRINO SODA PLAIN 250 ML",
+                        "category": {
+                            "name": "Soft Drinks",
+                            "slug": "soft drinks"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 170,
+                        "slug": "urun91",
+                        "image": "img/cl.webp",
+                        "price_parts": [170, 0]
+                    },
+                    {
+                        "title": "S.PELLEGRINO SODA PLAIN 750 ML",
+                        "category": {
+                            "name": "Soft Drinks",
+                            "slug": "soft drinks"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 270,
+                        "slug": "urun92",
+                        "image": "img/cl.webp",
+                        "price_parts": [270, 0]
+                    },
+                    {
+                        "title": "REDBULL 250 ML",
+                        "category": {
+                            "name": "Soft Drinks",
+                            "slug": "soft drinks"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 195,
+                        "slug": "urun93",
+                        "image": "img/cl.webp",
+                        "price_parts": [195, 0]
+                    },
+                    {
+                        "title": "FUSE TEA PEACH",
+                        "category": {
+                            "name": "Soft Drinks",
+                            "slug": "soft drinks"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 105,
+                        "slug": "urun94",
+                        "image": "img/cl.webp",
+                        "price_parts": [105, 0]
+                    },
+                    {
+                        "title": "FUSE TEA LEMON",
+                        "category": {
+                            "name": "Soft Drinks",
+                            "slug": "soft drinks"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 105,
+                        "slug": "urun95",
+                        "image": "img/cl.webp",
+                        "price_parts": [105, 0]
+                    },
+                    {
+                        "title": "LEMONADE",
+                        "category": {
+                            "name": "Lemonades",
+                            "slug": "lemonade"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 115,
+                        "slug": "urun96",
+                        "image": "img/limonata.jpg",
+                        "price_parts": [115, 0]
+                    },
+                    {
+                        "title": "MINT LEMONADE",
+                        "category": {
+                            "name": "Lemonades",
+                            "slug": "lemonade"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 125,
+                        "slug": "urun97",
+                        "image": "img/cl.webp",
+                        "price_parts": [125, 0]
+                    },
+                    {
+                        "title": "PLAY AYRAN",
+                        "category": {
+                            "name": "Ayran",
+                            "slug": "buttermilk"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 95,
+                        "slug": "urun98",
+                        "image": "img/ayran.webp",
+                        "price_parts": [95, 0]
+                    },
+                    {
+                        "title": "MINT AYRAN",
+                        "category": {
+                            "name": "Ayran",
+                            "slug": "buttermilk"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 105,
+                        "slug": "urun99",
+                        "image": "img/cl.webp",
+                        "price_parts": [105, 0]
+                    },
+                    {
+                        "title": "ICE LATTE",
+                        "category": {
+                            "name": "Iced Coffees",
+                            "slug": "cold coffees"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 135,
+                        "slug": "urun100",
+                        "image": "img/sogukkahve.jpg",
+                        "price_parts": [135, 0]
+                    },
+                    {
+                        "title": "ICE AMERICANO",
+                        "category": {
+                            "name": "Iced Coffees",
+                            "slug": "cold coffees"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 120,
+                        "slug": "urun101",
+                        "image": "img/cl.webp",
+                        "price_parts": [120, 0]
+                    },
+                    {
+                        "title": "ICE WHITE CHOCOLATE LATTE",
+                        "category": {
+                            "name": "Iced Coffees",
+                            "slug": "cold coffees"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 145,
+                        "slug": "urun102",
+                        "image": "img/cl.webp",
+                        "price_parts": [145, 0]
+                    },
+                    {
+                        "title": "ICE MOCHA",
+                        "category": {
+                            "name": "Iced Coffees",
+                            "slug": "cold coffees"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 139,
+                        "slug": "urun103",
+                        "image": "img/cl.webp",
+                        "price_parts": [139, 0]
+                    },
+                    {
+                        "title": "ESPRESSO",
+                        "category": {
+                            "name": "Hot Coffees",
+                            "slug": "hot coffees"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 110,
+                        "slug": "urun104",
+                        "image": "img/sicakkahve.jpeg",
+                        "price_parts": [110, 0]
+                    },
+                    {
+                        "title": "DOUBLE ESPRESSO",
+                        "category": {
+                            "name": "Hot Coffees",
+                            "slug": "hot coffees"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 135,
+                        "slug": "urun105",
+                        "image": "img/cl.webp",
+                        "price_parts": [135, 0]
+                    },
+                    {
+                        "title": "CAPPUCINO",
+                        "category": {
+                            "name": "Hot Coffees",
+                            "slug": "hot coffees"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 140,
+                        "slug": "urun106",
+                        "image": "img/cl.webp",
+                        "price_parts": [140, 0]
+                    },
+                    {
+                        "title": "CAFE LATTE",
+                        "category": {
+                            "name": "Hot Coffees",
+                            "slug": "hot coffees"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 140,
+                        "slug": "urun107",
+                        "image": "img/cl.webp",
+                        "price_parts": [140, 0]
+                    },
+                    {
+                        "title": "FILTER COFFEE",
+                        "category": {
+                            "name": "Hot Coffee",
+                            "slug": "hot coffees"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 110,
+                        "slug": "urun108",
+                        "image": "img/cl.webp",
+                        "price_parts": [110, 0]
+                    },
+                    {
+                        "title": "AMERICANO",
+                        "category": {
+                            "name": "Hot Coffees",
+                            "slug": "hot coffees"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 135,
+                        "slug": "urun109",
+                        "image": "img/cl.webp",
+                        "price_parts": [135, 0]
+                    },
+                    {
+                        "title": "HOT CHOCOLATE",
+                        "category": {
+                            "name": "Hot Coffees",
+                            "slug": "hot coffees"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 145,
+                        "slug": "urun110",
+                        "image": "img/cl.webp",
+                        "price_parts": [145, 0]
+                    },
+                    {
+                        "title": "TURKISH COFFEE WITH GUM MASTIC",
+                        "category": {
+                            "name": "Turkish Coffees",
+                            "slug": "turkkahveleri"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 115,
+                        "slug": "urun111",
+                        "image": "img/turkkahve.jpg",
+                        "price_parts": [115, 0]
+                    },
+                    {
+                        "title": "TURKISH COFFEE",
+                        "category": {
+                            "name": "Turkish Coffees",
+                            "slug": "turkkahveleri"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 115,
+                        "slug": "urun112",
+                        "image": "img/cl.webp",
+                        "price_parts": [115, 0]
+                    },
+                    {
+                        "title": "DOUBLE TURKISH COFFEE",
+                        "category": {
+                            "name": "Turkish Coffees",
+                            "slug": "turkkahveleri"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 145,
+                        "slug": "urun113",
+                        "image": "img/cl.webp",
+                        "price_parts": [145, 0]
+                    },
+                    {
+                        "title": "NON-ALCOHOLIC MOJITO",
+                        "category": {
+                            "name": "Non-Alcoholic Cocktails",
+                            "slug": "non-alcoholiccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 285,
+                        "slug": "urun114",
+                        "image": "img/moji.webp",
+                        "price_parts": [285, 0]
+                    },
+                    {
+                        "title": "NON-ALCOHOLIC STRAWBERRY MOJITO",
+                        "category": {
+                            "name": "Non-Alcoholic Cocktails",
+                            "slug": "non-alcoholiccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 310,
+                        "slug": "urun115",
+                        "image": "img/cl.webp",
+                        "price_parts": [310, 0]
+                    },
+                    {
+                        "title": "CRAIC MIXOLOGY",
+                        "category": {
+                            "name": "Non-Alcoholic Cocktails",
+                            "slug": "non-alcoholiccocktails"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 345,
+                        "slug": "urun116",
+                        "image": "img/cl.webp",
+                        "price_parts": [345, 0]
+                    },
+                    {
+                        "title": "AMARETTO COFFEE",
+                        "category": {
+                            "name": "Alcoholic Coffees",
+                            "slug": "alcoholiccoffees"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 415,
+                        "slug": "urun117",
+                        "image": "img/alkollukahve.jpeg",
+                        "price_parts": [415, 0]
+                    },
+                    {
+                        "title": "BAILEYS LATTE COLD",
+                        "category": {
+                            "name": "Alcoholic Coffees",
+                            "slug": "alcoholiccoffees"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 415,
+                        "slug": "urun118",
+                        "image": "img/cl.webp",
+                        "price_parts": [415, 0]
+                    },
+                    {
+                        "title": "BAILEYS LATTE HOT",
+                        "category": {
+                            "name": "Alcoholic Coffees",
+                            "slug": "alcoholiccoffees"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 415,
+                        "slug": "urun119",
+                        "image": "img/cl.webp",
+                        "price_parts": [415, 0]
+                    },
+                    {
+                        "title": "IRISH COFFEE",
+                        "category": {
+                            "name": "Alcoholic Coffees",
+                            "slug": "alcoholiccoffees"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 415,
+                        "slug": "urun120",
+                        "image": "img/cl.webp",
+                        "price_parts": [415, 0]
+                    },
+                    {
+                        "title": "CARLSBERG 33 CL",
+                        "category": {
+                            "name": "Bottled Beers",
+                            "slug": "bottlebeers"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 175,
+                        "slug": "urun121",
+                        "image": "img/carlsberg.jpg",
+                        "price_parts": [175, 0]
+                    },
+                    {
+                        "title": "TUBORG GOLD 33 CL",
+                        "category": {
+                            "name": "Bottled Beers",
+                            "slug": "bottlebeers"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 145,
+                        "slug": "urun122",
+                        "image": "img/cl.webp",
+                        "price_parts": [145, 0]
+                    },
+                    {
+                        "title": "TUBORG GOLD 50 CL",
+                        "category": {
+                            "name": "Bottled Beers",
+                            "slug": "bottlebeers"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 205,
+                        "slug": "urun123",
+                        "image": "img/cl.webp",
+                        "price_parts": [205, 0]
+                    },
+                    {
+                        "title": "TUBORG GOLD BAR 33 CL",
+                        "category": {
+                            "name": "Bottled Beers",
+                            "slug": "bottlebeers"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 155,
+                        "slug": "urun124",
+                        "image": "img/cl.webp",
+                        "price_parts": [155, 0]
+                    },
+                    {
+                        "title": "TUBORG GOLD BAR 50 CL",
+                        "category": {
+                            "name": "Bottled Beers",
+                            "slug": "bottlebeers"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 215,
+                        "slug": "urun125",
+                        "image": "img/cl.webp",
+                        "price_parts": [215, 0]
+                    },
+                    {
+                        "title": "BLANC 33 CL",
+                        "category": {
+                            "name": "Bottled Beers",
+                            "slug": "bottlebeers"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 255,
+                        "slug": "urun126",
+                        "image": "img/cl.webp",
+                        "price_parts": [255, 0]
+                    },
+                    {
+                        "title": "DESPERADOS 33 CL",
+                        "category": {
+                            "name": "Bottled Beers",
+                            "slug": "bottlebeers"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 255,
+                        "slug": "urun127",
+                        "image": "img/cl.webp",
+                        "price_parts": [255, 0]
+                    },
+                    {
+                        "title": "FREDERIK INDIA PALE 33 CL",
+                        "category": {
+                            "name": "Bottled Beers",
+                            "slug": "bottlebeers"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 259,
+                        "slug": "urun128",
+                        "image": "img/cl.webp",
+                        "price_parts": [259, 0]
+                    },
+                    {
+                        "title": "GRIMBERGEN BLONDE 33 CL",
+                        "category": {
+                            "name": "Bottled Beers",
+                            "slug": "bottlebeers"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 245,
+                        "slug": "urun129",
+                        "image": "img/cl.webp",
+                        "price_parts": [245, 0]
+                    },
+                    {
+                        "title": "LEFT 33 CL",
+                        "category": {
+                            "name": "Bottled Beers",
+                            "slug": "bottlebeers"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 265,
+                        "slug": "urun130",
+                        "image": "img/cl.webp",
+                        "price_parts": [265, 0]
+                    },
+                    {
+                        "title": "WEIHENSTEPHANER 33 CL",
+                        "category": {
+                            "name": "Bottled Beers",
+                            "slug": "bottlebeers"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 285,
+                        "slug": "urun131",
+                        "image": "img/cl.webp",
+                        "price_parts": [285, 0]
+                    },
+                    {
+                        "title": "SMIRNOFF (ITALY)",
+                        "category": {
+                            "name": "Vodkas",
+                            "slug": "vodkas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 370,
+                        "slug": "urun132",
+                        "image": "img/smirnoff.jpg",
+                        "price_parts": [370, 0]
+                    },
+                    {
+                        "title": "SMİRNOFF (ITALY) (Double)",
+                        "category": {
+                            "name": "Vodkas",
+                            "slug": "vodkas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 730,
+                        "slug": "urun133",
+                        "image": "img/smirnoff.jpg", "price_parts": [730, 0]
+                    },
+                    {
+                        "title": "ABSOLUT (SWEDEN)",
+                        "category": {
+                            "name": "Vodkas",
+                            "slug": "vodkas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 410,
+                        "slug": "urun134",
+                        "image": "img/absolut.avif",
+                        "price_parts": [410, 0]
+                    },
+                    {
+                        "title": "ABSOLUT (SWEDEN) (Double)",
+                        "category": {
+                            "name": "Vodkas",
+                            "slug": "vodkas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 790,
+                        "slug": "urun135",
+                        "image": "img/absolut.avif",
+                        "price_parts": [790, 0]
+                    },
+                    {
+                        "title": "KETEL ONE",
+                        "category": {
+                            "name": "Vodkas",
+                            "slug": "vodkas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 530,
+                        "slug": "urun136",
+                        "image": "img/ketel.jpeg",
+                        "price_parts": [530, 0]
+                    },
+                    {
+                        "title": "KETEL ONE (Double)",
+                        "category": {
+                            "name": "Vodkas",
+                            "slug": "vodkas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 980,
+                        "slug": "urun137",
+                        "image": "img/ketel.jpeg",
+                        "price_parts": [980, 0]
+                    },
+                    {
+                        "title": "BELVEDERE (POLAND)",
+                        "category": {
+                            "name": "Vodkas",
+                            "slug": "vodkas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 790,
+                        "slug": "urun138",
+                        "image": "img/belvedere-vodka.jpg",
+                        "price_parts": [790, 0]
+                    },
+                    {
+                        "title": "BELVEDERE (POLAND) (Double)",
+                        "category": {
+                            "name": "Vodkas",
+                            "slug": "vodkas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 1350,
+                        "slug": "urun139",
+                        "image": "img/belvedere-vodka.jpg",
+                        "price_parts": [1350, 0]
+                    },
+                    {
+                        "title": "BELUGA (RUSSIAN)",
+                        "category": {
+                            "name": "Vodkas",
+                            "slug": "vodkas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 815,
+                        "slug": "urun140",
+                        "image": "img/beluga.jpg",
+                        "price_parts": [815, 0]
+                    },
+                    {
+                        "title": "BELUGA (RUSSIAN) (Double)",
+                        "category": {
+                            "name": "Vodkas",
+                            "slug": "vodkas"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 1490,
+                        "slug": "urun141",
+                        "image": "img/beluga.jpg",
+                        "price_parts": [1490, 0]
+                    },
+                    {
+                        "title": "BAILEYS",
+                        "category": {
+                            "name": "Liquors",
+                            "slug": "liquors"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 385,
+                        "slug": "urun142",
+                        "image": "img/likor.jpg",
+                        "price_parts": [385, 0]
+                    },
+                    {
+                        "title": "CARDINAL MELON",
+                        "category": {
+                            "name": "Liquors",
+                            "slug": "liquors"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 385,
+                        "slug": "urun143",
+                        "image": "img/cl.webp",
+                        "price_parts": [385, 0]
+                    },
+                    {
+                        "title": "MALIBU",
+                        "category": {
+                            "name": "Liquors",
+                            "slug": "liquors"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 385,
+                        "slug": "urun144",
+                        "image": "img/cl.webp",
+                        "price_parts": [385, 0]
+                    },
+                    {
+                        "title": "SAFARI",
+                        "category": {
+                            "name": "Liquors",
+                            "slug": "liquors"
+                        },
+                        "ingredients": "",
+                        "is_featured": "", "is_pinned": "",
+                        "price": 385,
+                        "slug": "urun145",
+                        "image": "img/cl.webp",
+                        "price_parts": [385, 0]
+                    },
+                    {
+                        "title": "KAHLUA",
+                        "category": {
+                            "name": "Liquors",
+                            "slug": "liquors"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 385,
+                        "slug": "urun146",
+                        "image": "img/cl.webp",
+                        "price_parts": [385, 0]
+                    },
+                    {
+                        "title": "ARCHERS",
+                        "category": {
+                            "name": "Liquors",
+                            "slug": "liquors"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 385,
+                        "slug": "urun147",
+                        "image": "img/cl.webp",
+                        "price_parts": [385, 0]
+                    },
+                    {
+                        "title": "SOUTHERN COMFORT",
+                        "category": {
+                            "name": "Liquors",
+                            "slug": "liquors"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 405,
+                        "slug": "urun148",
+                        "image": "img/cl.webp",
+                        "price_parts": [405, 0]
+                    },
+                    {
+                        "title": "AMARETTO",
+                        "category": {
+                            "name": "Liquors",
+                            "slug": "liquors"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 385,
+                        "slug": "urun149",
+                        "image": "img/cl.webp",
+                        "price_parts": [385, 0]
+                    },
+                    {
+                        "title": "TRIPLE SEC",
+                        "category": {
+                            "name": "Liquors",
+                            "slug": "liquors"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 385,
+                        "slug": "urun150",
+                        "image": "img/cl.webp",
+                        "price_parts": [385, 0]
+                    },
+                    {
+                        "title": "COINTREAU",
+                        "category": {
+                            "name": "Liquors",
+                            "slug": "liquors"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 415,
+                        "slug": "urun151",
+                        "image": "img/cl.webp",
+                        "price_parts": [415, 0]
+                    },
+                    {
+                        "title": "SHERIDANS",
+                        "category": {
+                            "name": "Liquors",
+                            "slug": "liquors"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 385,
+                        "slug": "urun152",
+                        "image": "img/cl.webp",
+                        "price_parts": [385, 0]
+                    },
+                    {
+                        "title": "JAGERMEISTER",
+                        "category": {
+                            "name": "Liquors",
+                            "slug": "liquors"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 415,
+                        "slug": "urun153",
+                        "image": "img/cl.webp",
+                        "price_parts": [415, 0]
+                    },
+                    {
+                        "title": "ST. GERMAIN",
+                        "category": {
+                            "name": "Liquors",
+                            "slug": "liquors"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 385,
+                        "slug": "urun154",
+                        "image": "img/cl.webp",
+                        "price_parts": [385, 0]
+                    },
+                    {
+                        "title": "DON JULIO BLANCO",
+                        "category": {
+                            "name": "Tequila",
+                            "slug": "tequila"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 315,
+                        "slug": "urun155",
+                        "image": "img/donjuan.avif",
+                        "price_parts": [315, 0]
+                    },
+                    {
+                        "title": "CASAMIGOS MEZCAL",
+                        "category": {
+                            "name": "Tequila",
+                            "slug": "tequila"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 395,
+                        "slug": "urun156",
+                        "image": "img/cl.webp",
+                        "price_parts": [395, 0]
+                    },
+                    {
+                        "title": "OLMECA BLANCO",
+                        "category": {
+                            "name": "Tequila",
+                            "slug": "tequila"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 285,
+                        "slug": "urun157",
+                        "image": "img/cl.webp",
+                        "price_parts": [285, 0]
+                    },
+                    {
+                        "title": "BOSS SILVER",
+                        "category": {
+                            "name": "Tequila",
+                            "slug": "tequila"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 650,
+                        "slug": "urun158",
+                        "image": "img/cl.webp",
+                        "price_parts": [650, 0]
+                    },
+                    {
+                        "title": "GORDONS GIN",
+                        "category": {
+                            "name": "Jinn",
+                            "slug": "jinn"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 370,
+                        "slug": "urun159",
+                        "image": "img/cin.jpg",
+                        "price_parts": [370, 0]
+                    },
+                    {
+                        "title": "GORDONS GIN (Double)",
+                        "category": {
+                            "name": "Jinn",
+                            "slug": "jinn"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 690,
+                        "slug": "urun160",
+                        "image": "img/cin.jpg",
+                        "price_parts": [690, 0]
+                    },
+                    {
+                        "title": "TANQUERAY TEN GIN",
+                        "category": {
+                            "name": "Jinn",
+                            "slug": "jinn"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 465,
+                        "slug": "urun161",
+                        "image": "img/cl.webp",
+                        "price_parts": [465, 0]
+                    },
+                    {
+                        "title": "TANQUERAY TEN GIN (Double)",
+                        "category": {
+                            "name": "Jinn",
+                            "slug": "jinn"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 880,
+                        "slug": "urun162",
+                        "image": "img/cl.webp",
+                        "price_parts": [880, 0]
+                    },
+                    {
+                        "title": "TANQUERAY DRY GIN",
+                        "category": {
+                            "name": "Jinn",
+                            "slug": "jinn"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 425,
+                        "slug": "urun163",
+                        "image": "img/cl.webp",
+                        "price_parts": [425, 0]
+                    },
+                    {
+                        "title": "TANQUERAY DRY GIN (Double)",
+                        "category": {
+                            "name": "Jinn",
+                            "slug": "jinn"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 790,
+                        "slug": "urun164",
+                        "image": "img/cl.webp",
+                        "price_parts": [790, 0]
+                    },
+                    {
+                        "title": "HENDRICK'S GIN",
+                        "category": {
+                            "name": "Jinn",
+                            "slug": "jinn"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 635,
+                        "slug": "urun165",
+                        "image": "img/cl.webp",
+                        "price_parts": [635, 0]
+                    },
+                    {
+                        "title": "HENDRICK'S GIN (Double)",
+                        "category": {
+                            "name": "Jinn",
+                            "slug": "jinn"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 1150,
+                        "slug": "urun166",
+                        "image": "img/cl.webp",
+                        "price_parts": [1150, 0]
+                    },
+                    {
+                        "title": "CAPTAIN MORGAN WHITE",
+                        "category": {
+                            "name": "Roms",
+                            "slug": "rums"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 350,
+                        "slug": "urun167",
+                        "image": "img/rom.png",
+                        "price_parts": [350, 0]
+                    },
+                    {
+                        "title": "CAPTAIN MORGAN GOLD",
+                        "category": {
+                            "name": "Roms",
+                            "slug": "rums"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 390,
+                        "slug": "urun168",
+                        "image": "img/rom-gold.webp",
+                        "price_parts": [390, 0]
+                    },
+                    {
+                        "title": "BACARDI (BERMUDA)",
+                        "category": {
+                            "name": "Roms",
+                            "slug": "rums"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 465,
+                        "slug": "urun169",
+                        "image": "img/cl.webp",
+                        "price_parts": [465, 0]
+                    },
+                    {
+                        "title": "CHIVAS REGAL 12 YEARS",
+                        "category": {
+                            "name": "Whiskey Scotch",
+                            "slug": "whiskeyscotch"
+                        },
+
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 460,
+                        "slug": "urun170",
+                        "image": "img/ChivasRegal.webp",
+                        "price_parts": [460, 0]
+                    },
+                    {
+                        "title": "CHIVAS REGAL 12 YEARS (Double)",
+                        "category": {
+                            "name": "Whiskey Scotch",
+                            "slug": "whiskeyscotch"
+                        },
+
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 890,
+                        "slug": "urun171",
+                        "image": "img/ChivasRegal.webp",
+                        "price_parts": [890, 0]
+                    },
+                    {
+                        "title": "CHIVAS REGAL 18 YEARS",
+                        "category": {
+                            "name": "Whiskey Scotch",
+                            "slug": "whiskeyscotch"
+                        },
+
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 715,
+                        "slug": "urun172",
+                        "image": "img/ChivasRegal18.jpg",
+                        "price_parts": [715, 0]
+                    },
+                    {
+                        "title": "CHIVAS REGAL 18 YEARS (Double)",
+                        "category": {
+                            "name": "Whiskey Scotch",
+                            "slug": "whiskeyscotch"
+                        },
+
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 1350,
+                        "slug": "urun173",
+                        "image": "img/ChivasRegal18.jpg",
+                        "price_parts": [1350, 0]
+                    },
+                    {
+                        "title": "J&W RED LABEL",
+                        "category": {
+                            "name": "Whiskey Scotch",
+                            "slug": "whiskeyscotch"
+                        },
+
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 420,
+                        "slug": "urun174",
+                        "image": "img/cl.webp",
+                        "price_parts": [420, 0]
+                    },
+                    {
+                        "title": "J&W RED LABEL (Double)",
+                        "category": {
+                            "name": "Whiskey Scotch",
+                            "slug": "whiskeyscotch"
+                        },
+
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 785,
+                        "slug": "urun175",
+                        "image": "img/cl.webp",
+                        "price_parts": [785, 0]
+                    },
+                    {
+                        "title": "J&W BLACK LABEL",
+                        "category": {
+                            "name": "Whiskey Scotch",
+                            "slug": "whiskeyscotch"
+                        },
+
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 460,
+                        "slug": "urun176",
+                        "image": "img/cl.webp",
+                        "price_parts": [460, 0]
+                    },
+                    {
+                        "title": "J&W BLACK LABEL (Double)",
+                        "category": {
+                            "name": "Whiskey Scotch",
+                            "slug": "whiskeyscotch"
+                        },
+
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 890,
+                        "slug": "urun177",
+                        "image": "img/cl.webp",
+                        "price_parts": [890, 0]
+                    },
+                    {
+                        "title": "J&W DOUBLE BLACK LABEL",
+                        "category": {
+                            "name": "Whiskey Scotch",
+                            "slug": "whiskeyscotch"
+                        },
+
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 505,
+                        "slug": "urun178",
+                        "image": "img/cl.webp",
+                        "price_parts": [505, 0]
+                    },
+                    {
+                        "title": "J&W BLUE LABEL",
+                        "category": {
+                            "name": "Whiskey Scotch",
+                            "slug": "whiskeyscotch"
+                        },
+
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 705,
+                        "slug": "urun179",
+                        "image": "img/cl.webp",
+                        "price_parts": [705, 0]
+                    },
+                    {
+                        "title": "JAMESON",
+                        "category": {
+                            "name": "Whiskey Irish",
+                            "slug": "wishkeyirish"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "", "price": 420,
+                        "slug": "urun180",
+                        "image": "img/jamerson.jpg",
+                        "price_parts": [420, 0]
+                    },
+                    {
+                        "title": "JAMESON (Double)",
+                        "category": {
+                            "name": "Whiskey Irish",
+                            "slug": "wishkeyirish"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 785,
+                        "slug": "urun181",
+                        "image": "img/jamerson.jpg",
+                        "price_parts": [785, 0]
+                    },
+                    {
+                        "title": "JAMESON BLACK BARREL",
+                        "category": {
+                            "name": "Whiskey Irish",
+                            "slug": "wishkeyirish"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 445,
+                        "slug": "urun182",
+                        "image": "img/cl.webp",
+                        "price_parts": [445, 0]
+                    },
+                    {
+                        "title": "JAMESON BLACK BARREL (Double)",
+                        "category": {
+                            "name": "Whiskey Irish",
+                            "slug": "wishkeyirish"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 790,
+                        "slug": "urun183",
+                        "image": "img/cl.webp",
+                        "price_parts": [790, 0]
+                    },
+                    {
+                        "title": "SINGLETON 12 YEARS",
+                        "category": {
+                            "name": "Wishkey Signel Malt",
+                            "slug": "wishkey"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 575,
+                        "slug": "urun184",
+                        "image": "img/singleton-12-Yillik.png",
+                        "price_parts": [575, 0]
+                    },
+                    {
+                        "title": "SINGLETON 12 YEARS (Double)",
+                        "category": {
+                            "name": "Wishkey Signel Malt",
+                            "slug": "wishkey"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 990,
+                        "slug": "urun185",
+                        "image": "img/singleton-12-Yillik.png",
+                        "price_parts": [990, 0]
+                    },
+                    {
+                        "title": "THE GLENLIVET 12 YEARS",
+                        "category": {
+                            "name": "Wishkey Signel Malt",
+                            "slug": "wishkey"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 785,
+                        "slug": "urun186",
+                        "image": "img/cl.webp",
+                        "price_parts": [785, 0]
+                    },
+                    {
+                        "title": "THE GLENLIVET 12 YEARS (Double)",
+                        "category": {
+                            "name": "Wishkey Signel Malt",
+                            "slug": "wishkey"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 1350,
+                        "slug": "urun187",
+                        "image": "img/cl.webp",
+                        "price_parts": [1350, 0]
+                    },
+                    {
+                        "title": "TALISKER 10 YEARS",
+                        "category": {
+                            "name": "Wishkey Signel Malt",
+                            "slug": "wishkey"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 745,
+                        "slug": "urun188",
+                        "image": "img/cl.webp",
+                        "price_parts": [745, 0]
+                    },
+                    {
+                        "title": "TALISKER 10 YEARS (Double)",
+                        "category": {
+                            "name": "Wishkey Signel Malt",
+                            "slug": "wishkey"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 1310,
+                        "slug": "urun189",
+                        "image": "img/cl.webp",
+                        "price_parts": [1310, 0]
+                    },
+                    {
+                        "title": "LAGAVULIN 12 YEARS",
+                        "category": {
+                            "name": "Wishkey Signel Malt",
+                            "slug": "wishkey"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 1095,
+                        "slug": "urun190",
+                        "image": "img/cl.webp",
+                        "price_parts": [1095, 0]
+                    },
+                    {
+                        "title": "LAGAVULIN 12 YEARS (Double)",
+                        "category": {
+                            "name": "Wishkey Signel Malt",
+                            "slug": "wishkey"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 1850,
+                        "slug": "urun191",
+                        "image": "img/cl.webp",
+                        "price_parts": [1850, 0]
+                    },
+                    {
+                        "title": "JIM BEAM",
+                        "category": {
+                            "name": "Whiskey Bourbon",
+                            "slug": "wishkeybourbon"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 440,
+                        "slug": "urun192",
+                        "image": "img/jimbeam.jpg",
+                        "price_parts": [440, 0]
+                    },
+                    {
+                        "title": "JIM BEAM (Double)",
+                        "category": {
+                            "name": "Whiskey Bourbon",
+                            "slug": "wishkeybourbon"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 790,
+                        "slug": "urun193",
+                        "image": "img/jimbeam.jpg",
+                        "price_parts": [790, 0]
+                    },
+                    {
+                        "title": "JACK DANIELS",
+                        "category": {
+                            "name": "Whiskey Bourbon",
+                            "slug": "wishkeybourbon"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 460,
+                        "slug": "urun194",
+                        "image": "img/jack.webp",
+                        "price_parts": [460, 0]
+                    },
+                    {
+                        "title": "JACK DANIELS (Double)",
+                        "category": {
+                            "name": "Whiskey Bourbon",
+                            "slug": "wishkeybourbon"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 810,
+                        "slug": "urun195",
+                        "image": "img/jack.webp",
+                        "price_parts": [810, 0]
+                    },
+                    {
+                        "title": "GENTLEMAN JACK",
+                        "category": {
+                            "name": "Whiskey Bourbon",
+                            "slug": "wishkeybourbon"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 695,
+                        "slug": "urun196",
+                        "image": "img/gentleman.jpg",
+                        "price_parts": [695, 0]
+                    },
+                    {
+                        "title": "GENTLEMAN JACK (Double)",
+                        "category": {
+                            "name": "Whiskey Bourbon",
+                            "slug": "wishkeybourbon"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 1100,
+                        "slug": "urun197",
+                        "image": "img/gentleman.jpg",
+                        "price_parts": [1100, 0]
+                    },
+                    {
+                        "title": "MARTINI BİANCO",
+                        "category": {
+                            "name": "Digestive",
+                            "slug": "digestive"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 345,
+                        "slug": "urun198",
+                        "image": "img/Martini-Bianco.png",
+                        "price_parts": [345, 0]
+                    },
+                    {
+                        "title": "MARTINI EXTRA DRY",
+                        "category": {
+                            "name": "Digestive",
+                            "slug": "digestive"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 345,
+                        "slug": "urun199",
+                        "image": "img/cl.webp",
+                        "price_parts": [345, 0]
+                    },
+                    {
+                        "title": "MARTINI ROSSO",
+                        "category": {
+                            "name": "Digestive",
+                            "slug": "digestive"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 345,
+                        "slug": "urun200",
+                        "image": "img/cl.webp",
+                        "price_parts": [345, 0]
+                    },
+                    {
+                        "title": "APEROL",
+                        "category": {
+                            "name": "Digestive",
+                            "slug": "digestive"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 345,
+                        "slug": "urun201",
+                        "image": "img/cl.webp",
+                        "price_parts": [345, 0]
+                    },
+                    {
+                        "title": "GRAPPA",
+                        "category": {
+                            "name": "Digestive",
+                            "slug": "digestive"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 345,
+                        "slug": "urun202",
+                        "image": "img/cl.webp",
+                        "price_parts": [345, 0]
+                    },
+                    {
+                        "title": "CAMPARİ",
+                        "category": {
+                            "name": "Digestive",
+                            "slug": "digestive"
+                        },
+                        "ingredients": "", "is_featured": "",
+                        "is_pinned": "",
+                        "price": 345,
+                        "slug": "urun203",
+                        "image": "img/cl.webp",
+                        "price_parts": [345, 0]
+                    },
+                    {
+                        "title": "HENNESY VS",
+                        "category": {
+                            "name": "Cognac",
+                            "slug": "cognac"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 650,
+                        "slug": "urun204",
+                        "image": "img/Hennessy-VS-Cognac.jpg",
+                        "price_parts": [650, 0]
+                    },
+                    {
+                        "title": "HENNESY X.O",
+                        "category": {
+                            "name": "Cognac",
+                            "slug": "cognac"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 850,
+                        "slug": "urun205",
+                        "image": "img/cl.webp",
+                        "price_parts": [850, 0]
+                    },
+                    {
+                        "title": "MARTELL V.S.",
+                        "category": {
+                            "name": "Cognac",
+                            "slug": "cognac"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 715,
+                        "slug": "urun206",
+                        "image": "img/cl.webp",
+                        "price_parts": [715, 0]
+                    },
+                    {
+                        "title": "REMY MARTIN V.S.O.P",
+                        "category": {
+                            "name": "Cognac",
+                            "slug": "cognac"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 1100,
+                        "slug": "urun207",
+                        "image": "img/cl.webp",
+                        "price_parts": [1100, 0]
+                    },
+                    {
+                        "title": "REMY MARTIN X.O",
+                        "category": {
+                            "name": "Cognac",
+                            "slug": "cognac"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": 3100,
+                        "slug": "urun208",
+                        "image": "img/cl.webp",
+                        "price_parts": [3100, 0]
+                    },
+                    {
+                        "title": "SUVLA, CABERNET SAUVIGNON (ÇANAKKALE)",
+                        "category": {
+                            "name": "Red Wine",
+                            "slug": "redwine"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun209",
+                        "image": "img/suvlasarap.webp",
+                        "price_parts": [""]
+                    },
+                    {
+                        "title": "ANCYRA MERLOT (DENIZLI REGION)",
+                        "category": {
+                            "name": "Red Wine",
+                            "slug": "redwine"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun210",
+                        "image": "img/cl.webp",
+                        "price_parts": [""]
+                    },
+                    {
+                        "title": "ANCYRA C. SAUVIGNOON SYRAH (IZMIR CESME REGION)",
+                        "category": {
+                            "name": "Red Wine",
+                            "slug": "redwine"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun211",
+                        "image": "img/cl.webp",
+                        "price_parts": [""]
+                    },
+                    {
+                        "title": "SELECTION OKUZGOZU BOGAZKERE (EASTERN ANATOLIAN REGION)",
+                        "category": {
+                            "name": "Red Wine",
+                            "slug": "redwine"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun212",
+                        "image": "img/cl.webp",
+                        "price_parts": [""]
+                    },
+                    {
+                        "title": "SANTA HELENA CABARNET SAUVIGNON (CHILE)",
+                        "category": {
+                            "name": "Red Wine",
+                            "slug": "redwine"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun213",
+                        "image": "img/cl.webp",
+                        "price_parts": [""]
+                    },
+                    {
+                        "title": "SUVLA, KINALI YAPINCAK (ÇANAKKALE)",
+                        "category": {
+                            "name": "White Wine",
+                            "slug": "whitewine"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun214",
+                        "image": "img/suvla.jpeg", "price_parts": [""]
+                    },
+                    {
+                        "title": "SARTORI PINOT GRIGIO(FRANCE)",
+                        "category": {
+                            "name": "White Wine",
+                            "slug": "whitewine"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun215",
+                        "image": "img/cl.webp",
+                        "price_parts": [""]
+                    },
+                    {
+                        "title": "EGEO CHARDONNAY (AEGEAN REGION)",
+                        "category": {
+                            "name": "White Wine",
+                            "slug": "whitewine"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun216",
+                        "image": "img/cl.webp",
+                        "price_parts": [""]
+                    },
+                    {
+                        "title": "SELECTION NARINCE EMİR (NEVŞEHİR)",
+                        "category": {
+                            "name": "White Wine",
+                            "slug": "whitewine"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun217",
+                        "image": "img/cl.webp",
+                        "price_parts": [""]
+                    },
+                    {
+                        "title": "SANTA HELENA SAUVIGNON BLANC (CHILE)",
+                        "category": {
+                            "name": "White Wine",
+                            "slug": "whitewine"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun218",
+                        "image": "img/cl.webp",
+                        "price_parts": [""]
+                    },
+                    {
+                        "title": "İSABEY SYRAH KALECİK KARASİ (AEGEAN REGION)",
+                        "category": {
+                            "name": "Rose Wines",
+                            "slug": "rosewines"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun219",
+                        "image": "img/sevilen-isabey-kalecik-karasi.webp",
+                        "price_parts": [""]
+                    },
+                    {
+                        "title": "SUVLA BLUSH KARASAKIZ (ÇANAKKALE)",
+                        "category": {
+                            "name": "Rose Wines",
+                            "slug": "rosewines"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun220",
+                        "image": "img/cl.webp",
+                        "price_parts": [""]
+                    },
+                    {
+                        "title": "SARTORI PINOT GRIGIO BLUSH(FRANCE)",
+                        "category": {
+                            "name": "Rose Wines",
+                            "slug": "rosewines"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun221",
+                        "image": "img/cl.webp",
+                        "price_parts": [""]
+                    },
+                    {
+                        "title": "MONCIGALE BLUSH (FRANCE)",
+                        "category": {
+                            "name": "Rose Wines",
+                            "slug": "rosewines"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun222",
+                        "image": "img/cl.webp",
+                        "price_parts": [""]
+                    },
+                    {
+                        "title": "MON REVE PROSECCO",
+                        "category": {
+                            "name": "Champagnes",
+                            "slug": "champagnes"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun223",
+                        "image": "img/monreve.jpeg",
+                        "price_parts": [""]
+                    },
+                    {
+                        "title": "INCİ DAMASI (AEGEAN REGION)",
+                        "category": {
+                            "name": "Champagnes",
+                            "slug": "champagnes"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun224",
+                        "image": "img/cl.webp",
+                        "price_parts": [""]
+                    },
+                    {
+                        "title": "MOET & CHANDON BRUT IMPERIAL (FRANCE)",
+                        "category": {
+                            "name": "Champagnes",
+                            "slug": "champagnes"
+                        },
+                        "ingredients": "",
+                        "is_featured": "",
+                        "is_pinned": "",
+                        "price": "",
+                        "slug": "urun225",
+                        "image": "img/cl.webp",
+                        "price_parts": ['']
+                    }
+
+
+                    ],
+                    categories: [],
+                    initialCategory: '',
+
+                    init() {
+                        const categoryProductCounts = {};
+
+                        // Derive categories from products and also set in the store
+                        this.categories = this.products.reduce((acc, product) => {
+                            const category = product.category;
+
+                            if (category) {
+                                const categorySlug = category.slug;
+
+                                // Check if the category is already added to the accumulatedCategories
+                                const categoryNotExists = !acc[categorySlug]
+                                if (categoryNotExists) {
+                                    acc[category.slug] = {
+                                        name: category.name,
+                                        excerpt: '',
+                                        image: null
+                                    };
+                                    categoryProductCounts[categorySlug] = 0;
+                                }
+
+                                // Get the current category object from acc
+                                const currentCategory = acc[categorySlug];
+                                const productCount = categoryProductCounts[categorySlug];
+
+                                // Determine if this product should set the category image
+                                const categoryImageIsNotSet = !currentCategory.image;
+                                const productImageExists = product.image;
+
+
+                                if (categoryImageIsNotSet && productImageExists) {
+                                    currentCategory.image = product.image;
+                                }
+
+                                // Build the excerpt for the first 3 products of the category
+                                if (productCount < 3 && product.title) {
+                                    currentCategory.excerpt +=
+                                        (currentCategory.excerpt ? ', ' : '') + product.title;
+                                    categoryProductCounts[categorySlug] += 1;
+                                }
+                            }
+                            return acc;
+                        }, {});
+
+                        // Set the initial category
+                        const firstCategoryName = Object.values(this.categories)[0].name;
+                        if (firstCategoryName) {
+                            this.initialCategory = firstCategoryName;
+                        }
+                    },
+
+                })
+            });
+        </script>
+        <script>
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('categorylist', () => ({
+                    selectCategory(name, slug) {
+                        //$store.categories.setActiveCategory(category)
+                        Alpine.store('categories').setActiveCategory(name)
+                        document.getElementById(slug).scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'nearest',
+                            inline: 'center'
+                        })
+                    }
+                }))
+            })
+        </script>
+        <script>
+            document.addEventListener("alpine:init", () => {
+                Alpine.data("wifi", () => ({
+                    copy(text) {
+                        navigator.clipboard.writeText(text);
+                        new FilamentNotification()
+                            .title("Şifre kopyalandı")
+                            .success() // FIXME Icon color is not green
+                            .send();
+                        fathom.trackEvent("Sapling - Wifi password copied");
+                    },
+                }));
+            });
+        </script>
+        <script src="assets/livewire.min.js?id=cc800bf4" data-csrf="oMpfYustjwQCX2fjlZ8AcCWpGa04PFGbeJtUtPz1"
+            data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    </div>
+</body>
+
+</html>

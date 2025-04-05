@@ -1,0 +1,79 @@
+
+var swiper = new Swiper(".emwiperr", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+    320: {
+        slidesPerView: 1,
+            spaceBetween: 20
+    },
+    480: {
+        slidesPerView: 1,
+            spaceBetween: 20
+    },
+    640: {
+        slidesPerView: 1,
+            spaceBetween: 20
+    },
+    769: {
+        slidesPerView: 1,
+            spaceBetween: 20
+    }
+},
+    autoplay: {
+        delay: 4000,
+    },
+});
+var swiper = new Swiper(".emwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 40000,
+    },
+});
+var swiper = new Swiper(".emwiper3", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        640: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+        769: {
+            slidesPerView: 4,
+            spaceBetween: 20
+        }
+    },
+
+    autoplay: {
+        delay: 6000,
+    },
+});
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+})

@@ -1,0 +1,3172 @@
+[ {
+		"ingredients": "Bergama tulumu, Kars gravyer, isli Çerkez peyniri, gouda, ızgara hellim, kuru incir, kuru kayısı, üzüm, ceviz, grissini",
+		"is_featured": false,
+		"is_pinned": false,
+		"price": "550.00",
+		"slug": "urun1",
+		"title": "PEYNİR TABAĞI",
+		"image":
+		"img/peynirtabagi.webp",
+		"price_parts": [ 550, 0 ],
+		"category": {
+			"name": "Antre/Atıştırmalık",
+			"slug": "basla"
+		}
+	},
+	{
+		"title": "MÜCVER",
+		"category": {
+			"name": "Antre/Atıştırmalık",
+			"slug": "basla"
+		},
+		"ingredients": "Taze kabak, havuç ve taze otlar ile hazırlanmış mücverler, yoğurt sos ile",
+		"price": "380",
+		"slug": "urun2",
+		"image": "img/cl.webp",
+		"price_parts": [ 380, 0 ]
+	},
+	{
+		"title": "BAHARATLI PATATES KIZARTMASI",
+		"category": {
+			"name": "Antre/Atıştırmalık",
+			"slug": "basla"
+		},
+		"ingredients": "Cajun baharatı ile",
+		"price": "310",
+		"image": "img/cl.webp",
+		"price_parts": [ 310, 0 ]
+	},
+	{
+		"title": "ÇITIR TAVUK PARÇALARI",
+		"category": {
+			"name": "Antre/Atıştırmalık",
+			"slug": "basla"
+		},
+		"ingredients": "Çıtır tavuk parçaları, patates kızartması, ballı hardal sos, sriracha özel sos",
+		"price": "379",
+		"slug": "urun4",
+		"image": "img/cl.webp",
+		"price_parts": [ 379, 0 ]
+	},
+	{
+		"title": "ORTAYA ÇITIR ÇITIR (2 kişilik)",
+		"category": {
+			"name": "Antre/Atıştırmalık",
+			"slug": "basla"
+		},
+		"ingredients": "Frankfurter dana sosis, susam kaplı çıtır tavuk, çıtır jalapeño biberi, mozzarella çubukları, çıtır soğan, sigara böreği, patates kızartması; ballı hardal & tatlı-acı sos ile",
+		"price": "540",
+		"slug": "urun5",
+		"image": "img/cl.webp",
+		"price_parts": [ 540, 0 ]
+	},
+	{
+		"title": "TRÜFLÜ PARMESANLI PATATES",
+		"category": {
+			"name": "Antre/Atıştırmalık",
+			"slug": "basla"
+		},
+		"ingredients": "Cajun baharatı, trüf sos , parmesan ve maydanoz ile",
+		"price": "349",
+		"slug": "urun6",
+		"image": "img/cl.webp",
+		"price_parts": [ 349, 0 ]
+	},
+	{
+		"title": "IZGARA KARİDES ŞİŞ",
+		"category": {
+			"name": "Antre/Atıştırmalık",
+			"slug": "basla"
+		},
+		"ingredients": "Roka, kırmızı soğan ve domates",
+		"price": "550",
+		"slug": "urun7",
+		"image": "img/cl.webp",
+		"price_parts": [ 550, 0 ]
+	},
+	{
+		"title": "TAVUKLU SEZAR SALATA",
+		"category": {
+			"name": "Salatalar",
+			"slug": "salata"
+		},
+		"ingredients": "Marul, ızgara tavuk parçaları, çeri domates, pita kruton, mısır taneleri, parmesan, sezar sos ile",
+		"price": 450,
+		"slug": "urun8",
+		"image":
+		"img/sezartavuklu.webp",
+		"price_parts": [ 450, 0 ]
+	},
+	{
+		"title": "KIZARMIŞ HELLİM PEYNİRLİ SALATA",
+		"category": {
+			"name": "Salatalar",
+			"slug": "salata"
+		},
+		"ingredients": "Kızarmış hellim peyniri, nane ve maydanozdan oluşan tabule yeşilliği, nohut, bulgur, yeşil mercimek, nar taneleri, havuç, salatalık, kapya biber, zeytinyağı—limon sos ile",
+		"price": 420,
+		"slug": "urun9",
+		"image": "img/kizarmishelim.webp",
+		"price_parts": [ 420, 0 ]
+	},
+	{
+		"title": "KEÇİ PEYNİRLİ PANCAR SALATA",
+		"category": {
+			"name": "Salatalar",
+			"slug": "salata"
+		},
+		"ingredients": "Roka, marine edilmiş pancar, keçi peyniri & zeytin ezmeli milföy, ceviz, çilek; hardal sos ile",
+		"price": 430,
+		"slug": "urun10",
+		"image": "img/cl.webp",
+		"price_parts": [ 430, 0 ]
+	},
+	{
+		"title": "KÖFTELİ BOWL",
+		"category": {
+			"name": "Bowl",
+			"slug": "bowl"
+		},
+		"ingredients": "Izgara köfteler, ceviz, havuç, kapya biber, patlıcan, karnabahar, karışık yeşillik, kabak, baklagil mix, avokado, tane mısır , yağ limon sos ile",
+		"price": 465,
+		"slug": "urun11",
+		"image": "img/koftebawl.webp",
+		"price_parts": [ 465, 0 ]
+	},
+	{
+		"title": "TAVUKLU BOWL",
+		"category": {
+			"name": "Bowl",
+			"slug": "bowl"
+		},
+		"ingredients": "Izgara tavuk parçaları, avokado, basmati pirinç, meksika fasulyesi, karışık yeşillik, mısır, havuç, kinoa, kırmızı pancar; yağ limon sos ile",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 435,
+		"slug": "urun12",
+		"image": "img/cl.webp",
+		"price_parts": [ 435, 0 ]
+	},
+	{
+		"title": "PENNE ARABIATA",
+		"category": {
+			"name": "Makarnalar",
+			"slug": "makarnalar"
+		},
+		"ingredients": "Acılı domates sos ve parmesan ile",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 360,
+		"slug": "urun13",
+		"image": "img/penne.jpeg",
+		"price_parts": [ 360, 0 ]
+	},
+	{
+		"title": "FETTUCINI ALFREDO",
+		"category": {
+			"name": "Makarnalar",
+			"slug": "makarnalar"
+		},
+		"ingredients": "Kremalı sos ile",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 390,
+		"slug": "urun14",
+		"image": "img/cl.webp",
+		"price_parts": [ 390, 0 ]
+	},
+	{
+		"title": "BOLONEZ SOSLU SPAGHETTI",
+		"category": {
+			"name": "Makarnalar",
+			"slug": "makarnalar"
+		},
+		"ingredients": "Craic bolonez sos ve parmesan ile",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 430,
+		"slug": "urun15",
+		"image": "img/cl.webp",
+		"price_parts": [ 430, 0 ]
+	},
+	{
+		"title": "DENİZ MAHSULLÜ PAPARDELLE",
+		"category": {
+			"name": "Makarnalar",
+			"slug": "makarnalar"
+		},
+		"ingredients": "Kabuklu midye, karides, somon, kalamar domates sos ile",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 580,
+		"slug": "urun16",
+		"image": "img/cl.webp",
+		"price_parts": [ 580, 0 ]
+	},
+	{
+		"title": "CRAIC BURGER",
+		"category": {
+			"name": "Burger",
+			"slug": "burger"
+		},
+		"ingredients": "180 gr burger köftesi, dana bacon, kibrit patates, cheddar peyniri, koçan mısır, trüf mayo sos, baharatlı patates tava",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 510,
+		"slug": "urun17",
+		"image": "img/burger.jpg",
+		"price_parts": [ 510, 0 ]
+	},
+	{
+		"title": "MEKSİKA BURGER",
+		"category": {
+			"name": "Burger",
+			"slug": "burger"
+		},
+		"ingredients": "180 gr burger köftesi, domates , iceberg, jalapeno biberi, koçan mısır, acı burger sos, baharatlı patates tava,",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 460,
+		"slug": "urun18",
+		"image": "img/cl.webp",
+		"price_parts": [ 460, 0 ]
+	},
+	{
+		"title": "MUSHROOM BURGER",
+		"category": {
+			"name": "Burger",
+			"slug": "burger"
+		},
+		"ingredients": "180 gr. burger köftesi, cheddar peyniri, karamelize soğan ve ızgara istiridye mantarı , koçan mısır, burger sos, baharatlı patates tava,",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 475,
+		"slug": "urun19",
+		"image": "img/cl.webp",
+		"price_parts": [ 475, 0 ]
+	},
+	{
+		"title": "MİLANO USULÜ SCHNİTZEL",
+		"category": {
+			"name": "Ana Yemekler",
+			"slug": "anayemekler"
+		},
+		"ingredients": "Panelenmiş marine piliç, hardallı patates salatası, roka, parmesan , cherry domates, buharda pişmiş taze sebzeler, ev yapımı wasabili mayonez sos ile",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 490,
+		"slug": "urun20",
+		"image": "img/milano.webp",
+		"price_parts": [ 490, 0 ]
+	},
+	{
+		"title": "CAFE DE PARIS SOSLU ANTRİKOT",
+		"category": {
+			"name": "Ana Yemekler",
+			"slug": "anayemekler"
+		},
+		"ingredients": "Sebze sote ve cafe de paris sos ile",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 705,
+		"slug": "urun21",
+		"image": "img/cl.webp",
+		"price_parts": [ 705, 0 ]
+	},
+	{
+		"title": "IZGARA PİLİÇ KÜLBASTI",
+		"category": {
+			"name": "Ana Yemekler",
+			"slug": "anayemekler"
+		},
+		"ingredients": "Marine edilmiş piliç külbastı, buharda pişmiş taze sebzeler, zerdeçallı basmati pilavı ve ev yapımı yoğurt tahin sos ile",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 470,
+		"slug": "urun22",
+		"image": "img/cl.webp",
+		"price_parts": [ 470, 0 ]
+	},
+	{
+		"title": "IZGARA KÖFTE",
+		"category": {
+			"name": "Ana Yemekler",
+			"slug": "anayemekler"
+		},
+		"ingredients": "Ev yapımı brioche ekmeği üzerine ızgara köfteler, fırınlanmış domates, zerdeçallı basmati pilavı ve baharatlı patates kızartması ile",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 515,
+		"slug": "urun23",
+		"image": "img/cl.webp",
+		"price_parts": [ 515, 0 ]
+	},
+	{
+		"title": "SALMON",
+		"category": {
+			"name": "Ana Yemekler",
+			"slug": "anayemekler"
+		},
+		"ingredients": "Haşlanmış sebzeler, tereyağlı mantar sos ile",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 770,
+		"slug": "urun24",
+		"image": "img/cl.webp",
+		"price_parts": [ 770, 0 ]
+	},
+	{
+		"title": "TIRAMISU",
+		"category": {
+			"name": "Tatlılar",
+			"slug": "tatlilar"
+		},
+		"ingredients": "Craic yorumu ile hazırlanmış tiramisu, popcorn ce crumble ile",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 295,
+		"slug": "urun25",
+		"image": "img/tiramisu.webp",
+		"price_parts": [ 295, 0 ]
+	},
+	{
+		"title": "SAN SEBASTIAN",
+		"category": {
+			"name": "Tatlılar",
+			"slug": "tatlilar"
+		},
+		"ingredients": "Çikolalata sos ile",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 315,
+		"slug": "urun26",
+		"image": "img/cl.webp",
+		"price_parts": [ 315, 0 ]
+	},
+	{
+		"title": "MEYVE TABAĞI",
+		"category": {
+			"name": "Tatlılar",
+			"slug": "tatlilar"
+		},
+		"ingredients": "Mevsim Meyveleri ",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 365,
+		"slug": "urun27",
+		"image": "img/cl.webp",
+		"price_parts": [ 365, 0 ]
+	},
+	{
+		"title": "MR. LONG",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 550,
+		"slug": "urun28",
+		"image": "img/mr.jpg",
+		"price_parts": [ 550, 0 ]
+	},
+	{
+		"title": "Vodka, Gin, Tequila, Rum, Cointreau, Lemon juice, Cola",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun29",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "APEROL SPRITZ",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 525,
+		"slug": "urun30",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "Aperol, Prosecco, Soda",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun31",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "Whiskey SOUR",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 525,
+		"slug": "urun32",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "Bourbon Whiskey, Egg White, Simple Syrup, Lemon Juice",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun33",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "ESPRESSO MARTINI",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 525,
+		"slug": "urun34",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "Vodka, Kahlua, Vanilla Syrup, Espresso",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun35",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "MARGARITA",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 525,
+		"slug": "urun36",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "Tequila, Cointreau, Lemon Juice",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun37",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "LYNCHBURG LEMONADE",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 525,
+		"slug": "urun38",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "Jack Daniels, Cointreau, Sweet&Sour Sauce, Sprite",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun39",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "MOJITO",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 525,
+		"slug": "urun40",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "Rum, Simple syrup, Mint, Lime, Soda",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun41",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "COSMOPOLITAN",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 525,
+		"slug": "urun42",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "Vodka, Cointreau , Lemon Juice , Cranberry Juice",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun43",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "NEGRONI",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 525,
+		"slug": "urun44",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "Gin, Campari, Vermouth",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun45",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "OLD FASHION",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 525,
+		"slug": "urun46",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "Bourbon Whiskey, Angostura Bitter,Simple Syrup",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun47",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "MANHATTAN",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 525,
+		"slug": "urun48",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "Whiskey, Vermouth, Angostura Bitter, Cherry",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun49",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "AMARETTO SOUR",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 525,
+		"slug": "urun50",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "Amaretto, Egg White, Simple Syrup, Lemon Juice, Orange Juice",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun51",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "CHILI PASSION",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 525,
+		"slug": "urun52",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "Tequila, Cointreau, Passion fruit, Sweet&Sour Sauce",
+		"category": {
+			"name": "Classic Cocktails",
+			"slug": "ccocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun53",
+		"image": "img/cl.webp",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "CRAIC KARAKÖY",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun54",
+		"image": "img/sign.jpeg",
+		"price_parts": [ 525, 0 ]
+	},
+	{
+		"title": "Gin, Drambuie, Safari, Passion fruit, Sweet&Sour Sauce",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 575,
+		"slug": "urun55",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "ART NOUVEAU",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun56",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "Green Tea & Earl Grey infused Gin, Cointreau, Orange Marmalade, Lime Juice, Soda",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 575,
+		"slug": "urun57",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "MAIDEN'S TOWER",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun58",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "Rum, Amaretto, Malibu, Strawberry Sauce, Orgeat, Pineapple Juice",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 575,
+		"slug": "urun59",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "GOLDEN HOUR",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun60",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "Vanilla & Fig infused Bourbon Whiskey, Black Rum, Ginger Sauce, Ginger Ale",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 575,
+		"slug": "urun61",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "LAVINIA",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun62",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "Vodka, Aperol, Lemoncello, Lavender sauce, Sweet & Sour sauce ",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 575,
+		"slug": "urun63",
+		"image": "img/limoncello.jpeg",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "BLACK CHERRY",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun64",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "Black Rum, Chambord, Orange Aromatic Bitters, Egg White, Lime Juice, Simple Syrup",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 575,
+		"slug": "urun65",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "AFTER LIFE",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun66",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "Hibiscus infused Vodka, Southern Comfort, Maraschino Liqueur, Grape, Sweet Basil, Sweet&Sour Sauce",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 575,
+		"slug": "urun67",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "Whiskey GUM",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun68",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "Kahveli Skinos Shot, Biberiye ve Kahve Aromalı Single Malt Whiskey",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun69",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "GALATA SOUR",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun70",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "Vodka, Elderflower, Basil, Cucumber, Lemongrass Cordial, Lime, Sweet & Sour Sauce",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 575,
+		"slug": "urun71",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "GREEN MAGIC",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun72",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "Gin, Sweet&sour sauce, Sorrel, Lime juice, Cucumber",
+		"category": {
+			"name": "Signature Cocktails",
+			"slug": "scocktails"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun73",
+		"image": "img/cl.webp",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "ADA ÇAYI",
+		"category": {
+			"name": "Bitki Demleme Çayları",
+			"slug": "bitkicayilari"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 135,
+		"slug": "urun74",
+		"image": "img/adacay.webp",
+		"price_parts": [ 135, 0 ]
+	},
+	{
+		"title": "PAPATYA ÇAYI",
+		"category": {
+			"name": "Bitki Demleme Çayları",
+			"slug": "bitkicayilari"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 135,
+		"slug": "urun75",
+		"image": "img/papatya-cayi.webp",
+		"price_parts": [ 135, 0 ]
+	},
+	{
+		"title": "NANE LİMON",
+		"category": {
+			"name": "Bitki Demleme Çayları",
+			"slug": "bitkicayilari"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 135,
+		"slug": "urun76",
+		"image": "img/cl.webp",
+		"price_parts": [ 135, 0 ]
+	},
+	{
+		"title": "KIŞ ÇAYI",
+		"category": {
+			"name": "Bitki Demleme Çayları",
+			"slug": "bitkicayilari"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 135,
+		"slug": "urun77",
+		"image": "img/cl.webp",
+		"price_parts": [ 135, 0 ]
+	},
+	{
+		"title": "YASEMİNLİ YEŞİL ÇAY",
+		"category": {
+			"name": "Bitki Demleme Çayları",
+			"slug": "bitkicayilari"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 135,
+		"slug": "urun78",
+		"image": "img/cl.webp",
+		"price_parts": [ 135, 0 ]
+	},
+	{
+		"title": "IHLAMUR",
+		"category": {
+			"name": "Bitki Demleme Çayları",
+			"slug": "bitkicayilari"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 135,
+		"slug": "urun79",
+		"image": "img/cl.webp",
+		"price_parts": [ 135, 0 ]
+	},
+	{
+		"title": "İNCE BELLİ ÖZEL DEMLEME ÇAY",
+		"category": {
+			"name": "Bitki Demleme Çayları",
+			"slug": "bitkicayilari"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 65,
+		"slug": "urun80",
+		"image": "img/cl.webp",
+		"price_parts": [ 65, 0 ]
+	},
+	{
+		"title": "FİNCAN ÇAY",
+		"category": {
+			"name": "Bitki Demleme Çayları",
+			"slug": "bitkicayilari"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 85,
+		"slug": "urun81",
+		"image": "img/cl.webp",
+		"price_parts": [ 85, 0 ]
+	},
+	{
+		"title": "COCA COLA CLASSİC 300 ML",
+		"category": {
+			"name": "Meşrubatlar",
+			"slug": "mesrubatlar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 105,
+		"slug": "urun82",
+		"image": "img/kola.webp",
+		"price_parts": [ 105, 0 ]
+	},
+	{
+		"title": "COCA COLA ZERO 300 ML",
+		"category": {
+			"name": "Meşrubatlar",
+			"slug": "mesrubatlar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 105,
+		"slug": "urun83",
+		"image": "img/kola2.webp",
+		"price_parts": [ 105, 0 ]
+	},
+	{
+		"title": "FANTA 300 ML",
+		"category": {
+			"name": "Meşrubatlar",
+			"slug": "mesrubatlar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 105,
+		"slug": "urun84",
+		"image": "img/fanta.webp",
+		"price_parts": [ 105, 0 ]
+	},
+	{
+		"title": "SPRİTE 300 ML",
+		"category": {
+			"name": "Meşrubatlar",
+			"slug": "mesrubatlar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 105,
+		"slug": "urun85",
+		"image": "img/cl.webp",
+		"price_parts": [ 105, 0 ]
+	},
+	{
+		"title": "SCHWEPPES TONİC 250 ML",
+		"category": {
+			"name": "Meşrubatlar",
+			"slug": "mesrubatlar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 110,
+		"slug": "urun86",
+		"image": "img/cl.webp",
+		"price_parts": [ 110, 0 ]
+	},
+	{
+		"title": "SIRMA SU 330 ML",
+		"category": {
+			"name": "Meşrubatlar",
+			"slug": "mesrubatlar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 65,
+		"slug": "urun87",
+		"image": "img/cl.webp",
+		"price_parts": [ 65, 0 ]
+	},
+	{
+		"title": "SIRMA SU 750 ML",
+		"category": {
+			"name": "Meşrubatlar",
+			"slug": "mesrubatlar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 110,
+		"slug": "urun88",
+		"image": "img/cl.webp",
+		"price_parts": [ 110, 0 ]
+	},
+	{
+		"title": "SIRMA SODA 330 ML",
+		"category": {
+			"name": "Meşrubatlar",
+			"slug": "mesrubatlar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 79,
+		"slug": "urun89",
+		"image": "img/cl.webp",
+		"price_parts": [ 79, 0 ]
+	},
+	{
+		"title": "SIRMA SODA 750 ML",
+		"category": {
+			"name": "Meşrubatlar",
+			"slug": "mesrubatlar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 135,
+		"slug": "urun90",
+		"image": "img/cl.webp",
+		"price_parts": [ 135, 0 ]
+	},
+	{
+		"title": "S.PELLEGRİNO SODA SADE 250 ML",
+		"category": {
+			"name": "Meşrubatlar",
+			"slug": "mesrubatlar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 170,
+		"slug": "urun91",
+		"image": "img/cl.webp",
+		"price_parts": [ 170, 0 ]
+	},
+	{
+		"title": "S.PELLEGRİNO SODA SADE 750 ML",
+		"category": {
+			"name": "Meşrubatlar",
+			"slug": "mesrubatlar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 270,
+		"slug": "urun92",
+		"image": "img/cl.webp",
+		"price_parts": [ 270, 0 ]
+	},
+	{
+		"title": "REDBULL 250 ML",
+		"category": {
+			"name": "Meşrubatlar",
+			"slug": "mesrubatlar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 195,
+		"slug": "urun93",
+		"image": "img/cl.webp",
+		"price_parts": [ 195, 0 ]
+	},
+	{
+		"title": "FUSE TEA ŞEFTALİ",
+		"category": {
+			"name": "Meşrubatlar",
+			"slug": "mesrubatlar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 105,
+		"slug": "urun94",
+		"image": "img/cl.webp",
+		"price_parts": [ 105, 0 ]
+	},
+	{
+		"title": "FUSE TEA LİMON",
+		"category": {
+			"name": "Meşrubatlar",
+			"slug": "mesrubatlar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 105,
+		"slug": "urun95",
+		"image": "img/cl.webp",
+		"price_parts": [ 105, 0 ]
+	},
+	{
+		"title": "LİMONATA",
+		"category": {
+			"name": "Limonatalar",
+			"slug": "limonata"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 115,
+		"slug": "urun96",
+		"image": "img/limonata.jpg",
+		"price_parts": [ 115, 0 ]
+	},
+	{
+		"title": "NANELİ LİMONATA",
+		"category": {
+			"name": "Limonatalar",
+			"slug": "limonata"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 125,
+		"slug": "urun97",
+		"image": "img/cl.webp",
+		"price_parts": [ 125, 0 ]
+	},
+	{
+		"title": "SADE AYRAN",
+		"category": {
+			"name": "Ayran",
+			"slug": "ayran"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 95,
+		"slug": "urun98",
+		"image": "img/ayran.webp",
+		"price_parts": [ 95, 0 ]
+	},
+	{
+		"title": "NANELİ AYRAN",
+		"category": {
+			"name": "Ayran",
+			"slug": "ayran"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 105,
+		"slug": "urun99",
+		"image": "img/cl.webp",
+		"price_parts": [ 105, 0 ]
+	},
+
+	{
+		"title": "ICE LATTE",
+		"category": {
+			"name": "Soğuk Kahveler",
+			"slug": "sogukkahveler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 135,
+		"slug": "urun100",
+		"image": "img/sogukkahve.jpg",
+		"price_parts": [ 135, 0 ]
+	},
+	{
+		"title": "ICE AMERICANO",
+		"category": {
+			"name": "Soğuk Kahveler",
+			"slug": "sogukkahveler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 120,
+		"slug": "urun101",
+		"image": "img/cl.webp",
+		"price_parts": [ 120, 0 ]
+	},
+	{
+		"title": "ICE WHITE CHOCOLATE LATTE",
+		"category": {
+			"name": "Soğuk Kahveler",
+			"slug": "sogukkahveler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 145,
+		"slug": "urun102",
+		"image": "img/cl.webp",
+		"price_parts": [ 145, 0 ]
+	},
+	{
+		"title": "ICE MOCHA",
+		"category": {
+			"name": "Soğuk Kahveler",
+			"slug": "sogukkahveler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 139,
+		"slug": "urun103",
+		"image": "img/cl.webp",
+		"price_parts": [ 139, 0 ]
+	},
+	{
+		"title": "ESPRESSO",
+		"category": {
+			"name": "Sıcak Kahveler",
+			"slug": "sicakkahveler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 110,
+		"slug": "urun104",
+		"image": "img/sicakkahve.jpeg",
+		"price_parts": [ 110, 0 ]
+	},
+	{
+		"title": "DOUBLE ESPRESSO",
+		"category": {
+			"name": "Sıcak Kahveler",
+			"slug": "sicakkahveler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 135,
+		"slug": "urun105",
+		"image": "img/cl.webp",
+		"price_parts": [ 135, 0 ]
+	},
+	{
+		"title": "CAPPUCINO",
+		"category": {
+			"name": "Sıcak Kahveler",
+			"slug": "sicakkahveler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 140,
+		"slug": "urun106",
+		"image": "img/cl.webp",
+		"price_parts": [ 140, 0 ]
+	},
+	{
+		"title": "CAFE LATTE",
+		"category": {
+			"name": "Sıcak Kahveler",
+			"slug": "sicakkahveler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 140,
+		"slug": "urun107",
+		"image": "img/cl.webp",
+		"price_parts": [ 140, 0 ]
+	},
+	{
+		"title": "FİLTRE KAHVE",
+		"category": {
+			"name": "Sıcak Kahveler",
+			"slug": "sicakkahveler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 110,
+		"slug": "urun108",
+		"image": "img/cl.webp",
+		"price_parts": [ 110, 0 ]
+	},
+	{
+		"title": "AMERICANO",
+		"category": {
+			"name": "Sıcak Kahveler",
+			"slug": "sicakkahveler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 135,
+		"slug": "urun109",
+		"image": "img/cl.webp",
+		"price_parts": [ 135, 0 ]
+	},
+	{
+		"title": "HOT CHOCOLATE",
+		"category": {
+			"name": "Sıcak Kahveler",
+			"slug": "sicakkahveler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 145,
+		"slug": "urun110",
+		"image": "img/cl.webp",
+		"price_parts": [ 145, 0 ]
+	},
+	{
+		"title": "DAMLA SAKIZLI TÜRK KAHVESİ",
+		"category": {
+			"name": "Türk Kahveleri",
+			"slug": "turkkahveleri"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 115,
+		"slug": "urun111",
+		"image": "img/turkkahve.jpg",
+		"price_parts": [ 115, 0 ]
+	},
+	{
+		"title": "TÜRK KAHVESİ",
+		"category": {
+			"name": "Türk Kahveleri",
+			"slug": "turkkahveleri"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 115,
+		"slug": "urun112",
+		"image": "img/cl.webp",
+		"price_parts": [ 115, 0 ]
+	},
+	{
+		"title": "DOUBLE TÜRK KAHVESİ",
+		"category": {
+			"name": "Türk Kahveleri",
+			"slug": "turkkahveleri"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 145,
+		"slug": "urun113",
+		"image": "img/cl.webp",
+		"price_parts": [ 145, 0 ]
+	},
+	{
+		"title": "ALKOLSÜZ MOJİTO",
+		"category": {
+			"name": "Alkolsüz Kokteyller",
+			"slug": "alkolsuzkokteyller"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 285,
+		"slug": "urun114",
+		"image": "img/moji.webp",
+		"price_parts": [ 285, 0 ]
+	},
+	{
+		"title": "ALKOLSÜZ ÇİLEKLİ MOJİTO",
+		"category": {
+			"name": "Alkolsüz Kokteyller",
+			"slug": "alkolsuzkokteyller"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 310,
+		"slug": "urun115",
+		"image": "img/cl.webp",
+		"price_parts": [ 310, 0 ]
+	},
+	{
+		"title": "CRAIC MİXOLOGY",
+		"category": {
+			"name": "Alkolsüz Kokteyller",
+			"slug": "alkolsuzkokteyller"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 345,
+		"slug": "urun116",
+		"image": "img/cl.webp",
+		"price_parts": [ 345, 0 ]
+	},
+	{
+		"title": "AMARETTO COFFEE",
+		"category": {
+			"name": "Alkollü Kahveler",
+			"slug": "alkollukahveler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 415,
+		"slug": "urun117",
+		"image": "img/alkollukahve.jpeg",
+		"price_parts": [ 415, 0 ]
+	},
+	{
+		"title": "BAILEYS LATTE COLD",
+		"category": {
+			"name": "Alkollü Kahveler",
+			"slug": "alkollukahveler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 415,
+		"slug": "urun118",
+		"image": "img/cl.webp",
+		"price_parts": [ 415, 0 ]
+	},
+	{
+		"title": "BAILEYS LATTE HOT",
+		"category": {
+			"name": "Alkollü Kahveler",
+			"slug": "alkollukahveler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 415,
+		"slug": "urun119",
+		"image": "img/cl.webp",
+		"price_parts": [ 415, 0 ]
+	},
+	{
+		"title": "IRISH COFFEE",
+		"category": {
+			"name": "Alkollü Kahveler",
+			"slug": "alkollukahveler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 415,
+		"slug": "urun120",
+		"image": "img/cl.webp",
+		"price_parts": [ 415, 0 ]
+	},
+	{
+		"title": "CARLSBERG 33 CL",
+		"category": {
+			"name": "Şişe Biralar",
+			"slug": "sisebiralar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 175,
+		"slug": "urun121",
+		"image": "img/carlsberg.jpg",
+		"price_parts": [ 175, 0 ]
+	},
+	{
+		"title": "HEINEKEN",
+		"category": {
+			"name": "Şişe Biralar",
+			"slug": "sisebiralar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 295,
+		"slug": "urun500",
+		"image": "img/cl.webp",
+		"price_parts": [ 295, 0 ]
+	},
+	{
+		"title": "EFES MALT",
+		"category": {
+			"name": "Şişe Biralar",
+			"slug": "sisebiralar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 265,
+		"slug": "urun500",
+		"image": "img/cl.webp",
+		"price_parts": [ 265, 0 ]
+	},
+	{
+		"title": "TUBORG GOLD 33 CL",
+		"category": {
+			"name": "Şişe Biralar",
+			"slug": "sisebiralar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 145,
+		"slug": "urun122",
+		"image": "img/cl.webp",
+		"price_parts": [ 145, 0 ]
+	},
+	{
+		"title": "TUBORG GOLD 50 CL",
+		"category": {
+			"name": "Şişe Biralar",
+			"slug": "sisebiralar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 205,
+		"slug": "urun123",
+		"image": "img/cl.webp",
+		"price_parts": [ 205, 0 ]
+	},
+	{
+		"title": "TUBORG GOLD FIÇI 33 CL",
+		"category": {
+			"name": "Şişe Biralar",
+			"slug": "sisebiralar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 155,
+		"slug": "urun124",
+		"image": "img/cl.webp",
+		"price_parts": [ 155, 0 ]
+	},
+	{
+		"title": "TUBORG GOLD FIÇI 50 CL",
+		"category": {
+			"name": "Şişe Biralar",
+			"slug": "sisebiralar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 215,
+		"slug": "urun125",
+		"image": "img/cl.webp",
+		"price_parts": [ 215, 0 ]
+	},
+	{
+		"title": "BLANC 33 CL",
+		"category": {
+			"name": "Şişe Biralar",
+			"slug": "sisebiralar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 255,
+		"slug": "urun126",
+		"image": "img/cl.webp",
+		"price_parts": [ 255, 0 ]
+	},
+	{
+		"title": "DESPERADOS 33 CL",
+		"category": {
+			"name": "Şişe Biralar",
+			"slug": "sisebiralar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 255,
+		"slug": "urun127",
+		"image": "img/cl.webp",
+		"price_parts": [ 255, 0 ]
+	},
+	{
+		"title": "FREDERIK INDIA PALE 33 CL",
+		"category": {
+			"name": "Şişe Biralar",
+			"slug": "sisebiralar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 259,
+		"slug": "urun128",
+		"image": "img/cl.webp",
+		"price_parts": [ 259, 0 ]
+	},
+	{
+		"title": "GRİMBERGEN BLONDE 33 CL",
+		"category": {
+			"name": "Şişe Biralar",
+			"slug": "sisebiralar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 245,
+		"slug": "urun129",
+		"image": "img/cl.webp",
+		"price_parts": [ 245, 0 ]
+	},
+	{
+		"title": "SOL 33 CL",
+		"category": {
+			"name": "Şişe Biralar",
+			"slug": "sisebiralar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 265,
+		"slug": "urun130",
+		"image": "img/cl.webp",
+		"price_parts": [ 265, 0 ]
+	},
+	{
+		"title": "WEİHENSTEPHANER 33 CL",
+		"category": {
+			"name": "Şişe Biralar",
+			"slug": "sisebiralar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 285,
+		"slug": "urun131",
+		"image": "img/cl.webp",
+		"price_parts": [ 285, 0 ]
+	},
+	{
+		"title": "SMİRNOFF (ITALY)",
+		"category": {
+			"name": "Votkalar",
+			"slug": "votkalar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 370,
+		"slug": "urun132",
+		"image": "img/smirnoff.jpg",
+		"price_parts": [ 370, 0 ]
+	},
+	{
+		"title": "SMİRNOFF (ITALY)  (Duble)",
+		"category": {
+			"name": "Votkalar",
+			"slug": "votkalar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 730,
+		"slug": "urun133",
+		"image": "img/smirnoff.jpg",
+		"price_parts": [ 730, 0 ]
+	},
+	{
+		"title": "ABSOLUT (SWEDEN)",
+		"category": {
+			"name": "Votkalar",
+			"slug": "votkalar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 410,
+		"slug": "urun134",
+		"image": "img/absolut.avif",
+		"price_parts": [ 410, 0 ]
+	},
+	{
+		"title": "ABSOLUT (SWEDEN) (Duble)",
+		"category": {
+			"name": "Votkalar",
+			"slug": "votkalar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 790,
+		"slug": "urun135",
+		"image": "img/absolut.avif",
+		"price_parts": [ 790, 0 ]
+	},
+	{
+		"title": "KETEL ONE",
+		"category": {
+			"name": "Votkalar",
+			"slug": "votkalar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 530,
+		"slug": "urun136",
+		"image": "img/ketel.jpeg",
+		"price_parts": [ 530, 0 ]
+	},
+	{
+		"title": "KETEL ONE (Duble)",
+		"category": {
+			"name": "Votkalar",
+			"slug": "votkalar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 980,
+		"slug": "urun137",
+		"image": "img/ketel.jpeg",
+		"price_parts": [ 980, 0 ]
+	},
+	{
+		"title": "BELVEDERE (POLAND)",
+		"category": {
+			"name": "Votkalar",
+			"slug": "votkalar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 790,
+		"slug": "urun138",
+		"image": "img/belvedere-vodka.jpg",
+		"price_parts": [ 790, 0 ]
+	},
+	{
+		"title": "BELVEDERE (POLAND) (Duble)",
+		"category": {
+			"name": "Votkalar",
+			"slug": "votkalar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 1350,
+		"slug": "urun139",
+		"image": "img/belvedere-vodka.jpg",
+		"price_parts": [ 1350, 0 ]
+	},
+	{
+		"title": "BELUGA (RUSSIAN)",
+		"category": {
+			"name": "Votkalar",
+			"slug": "votkalar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 815,
+		"slug": "urun140",
+		"image": "img/beluga.jpg",
+		"price_parts": [ 815, 0 ]
+	},
+	{
+		"title": "BELUGA (RUSSIAN) (Duble)",
+		"category": {
+			"name": "Votkalar",
+			"slug": "votkalar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 1490,
+		"slug": "urun141",
+		"image": "img/beluga.jpg",
+		"price_parts": [ 1490, 0 ]
+	},
+	{
+		"title": "BAILEYS",
+		"category": {
+			"name": "Likörler",
+			"slug": "likorler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 385,
+		"slug": "urun142",
+		"image": "img/likor.jpg",
+		"price_parts": [ 385, 0 ]
+	},
+	{
+		"title": "CARDİNAL MELON",
+		"category": {
+			"name": "Likörler",
+			"slug": "likorler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 385,
+		"slug": "urun143",
+		"image": "img/cl.webp",
+		"price_parts": [ 385, 0 ]
+	},
+	{
+		"title": "MALİBU",
+		"category": {
+			"name": "Likörler",
+			"slug": "likorler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 385,
+		"slug": "urun144",
+		"image": "img/cl.webp",
+		"price_parts": [ 385, 0 ]
+	},
+	{
+		"title": "SAFARİ",
+		"category": {
+			"name": "Likörler",
+			"slug": "likorler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 385,
+		"slug": "urun145",
+		"image": "img/cl.webp",
+		"price_parts": [ 385, 0 ]
+	},
+	{
+		"title": "KAHLUA",
+		"category": {
+			"name": "Likörler",
+			"slug": "likorler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 385,
+		"slug": "urun146",
+		"image": "img/cl.webp",
+		"price_parts": [ 385, 0 ]
+	},
+	{
+		"title": "ARCHERS",
+		"category": {
+			"name": "Likörler",
+			"slug": "likorler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 385,
+		"slug": "urun147",
+		"image": "img/cl.webp",
+		"price_parts": [ 385, 0 ]
+	},
+	{
+		"title": "SOUTHERN COMFORT",
+		"category": {
+			"name": "Likörler",
+			"slug": "likorler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 405,
+		"slug": "urun148",
+		"image": "img/cl.webp",
+		"price_parts": [ 405, 0 ]
+	},
+	{
+		"title": "AMARETTO",
+		"category": {
+			"name": "Likörler",
+			"slug": "likorler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 385,
+		"slug": "urun149",
+		"image": "img/cl.webp",
+		"price_parts": [ 385, 0 ]
+	},
+	{
+		"title": "TRİPLE SEC",
+		"category": {
+			"name": "Likörler",
+			"slug": "likorler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 385,
+		"slug": "urun150",
+		"image": "img/cl.webp",
+		"price_parts": [ 385, 0 ]
+	},
+	{
+		"title": "COINTREAU",
+		"category": {
+			"name": "Likörler",
+			"slug": "likorler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 415,
+		"slug": "urun151",
+		"image": "img/cl.webp",
+		"price_parts": [ 415, 0 ]
+	},
+	{
+		"title": "SHERİDANS",
+		"category": {
+			"name": "Likörler",
+			"slug": "likorler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 385,
+		"slug": "urun152",
+		"image": "img/cl.webp",
+		"price_parts": [ 385, 0 ]
+	},
+	{
+		"title": "JAGERMEISTER",
+		"category": {
+			"name": "Likörler",
+			"slug": "likorler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 415,
+		"slug": "urun153",
+		"image": "img/cl.webp",
+		"price_parts": [ 415, 0 ]
+	},
+	{
+		"title": "ST. GERMAİN",
+		"category": {
+			"name": "Likörler",
+			"slug": "likorler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 385,
+		"slug": "urun154",
+		"image": "img/cl.webp",
+		"price_parts": [ 385, 0 ]
+	},
+	{
+		"title": "DON JULİO BLANCO",
+		"category": {
+			"name": "Tekila",
+			"slug": "tekila"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 315,
+		"slug": "urun155",
+		"image": "img/donjuan.avif",
+		"price_parts": [ 315, 0 ]
+	},
+	{
+		"title": "CASAMIGOS MEZCAL",
+		"category": {
+			"name": "Tekila",
+			"slug": "tekila"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 395,
+		"slug": "urun156",
+		"image": "img/cl.webp",
+		"price_parts": [ 395, 0 ]
+	},
+	{
+		"title": "OLMECA BLANCO",
+		"category": {
+			"name": "Tekila",
+			"slug": "tekila"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 285,
+		"slug": "urun157",
+		"image": "img/cl.webp",
+		"price_parts": [ 285, 0 ]
+	},
+	{
+		"title": "PATRON SİLVER",
+		"category": {
+			"name": "Tekila",
+			"slug": "tekila"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 650,
+		"slug": "urun158",
+		"image": "img/cl.webp",
+		"price_parts": [ 650, 0 ]
+	},
+	{
+		"title": "GORDONS GİN",
+		"category": {
+			"name": "Cinler",
+			"slug": "cinler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 370,
+		"slug": "urun159",
+		"image": "img/cin.jpg",
+		"price_parts": [ 370, 0 ]
+	},
+	{
+		"title": "GORDONS GİN (Duble)",
+		"category": {
+			"name": "Cinler",
+			"slug": "cinler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 690,
+		"slug": "urun160",
+		"image": "img/cin.jpg",
+		"price_parts": [ 690, 0 ]
+	},
+	{
+		"title": "TANQUERAY TEN GİN",
+		"category": {
+			"name": "Cinler",
+			"slug": "cinler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 465,
+		"slug": "urun161",
+		"image": "img/cl.webp",
+		"price_parts": [ 465, 0 ]
+	},
+	{
+		"title": "TANQUERAY TEN GİN (Duble)",
+		"category": {
+			"name": "Cinler",
+			"slug": "cinler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 880,
+		"slug": "urun162",
+		"image": "img/cl.webp",
+		"price_parts": [ 880, 0 ]
+	},
+	{
+		"title": "TANQUERAY DRY GİN",
+		"category": {
+			"name": "Cinler",
+			"slug": "cinler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 425,
+		"slug": "urun163",
+		"image": "img/cl.webp",
+		"price_parts": [ 425, 0 ]
+	},
+	{
+		"title": "TANQUERAY DRY GİN (Duble)",
+		"category": {
+			"name": "Cinler",
+			"slug": "cinler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 790,
+		"slug": "urun164",
+		"image": "img/cl.webp",
+		"price_parts": [ 790, 0 ]
+	},
+	{
+		"title": "HENDRİCK'S GİN",
+		"category": {
+			"name": "Cinler",
+			"slug": "cinler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 635,
+		"slug": "urun165",
+		"image": "img/cl.webp",
+		"price_parts": [ 635, 0 ]
+	},
+	{
+		"title": "HENDRİCK'S GİN (Duble)",
+		"category": {
+			"name": "Cinler",
+			"slug": "cinler"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 1150,
+		"slug": "urun166",
+		"image": "img/cl.webp",
+		"price_parts": [ 1150, 0 ]
+	},
+	{
+		"title": "CAPTAİN MORGAN WHİTE",
+		"category": {
+			"name": "Romlar",
+			"slug": "romlar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 350,
+		"slug": "urun167",
+		"image": "img/rom.png",
+		"price_parts": [ 350, 0 ]
+	},
+	{
+		"title": "CAPTAİN MORGAN GOLD",
+		"category": {
+			"name": "Romlar",
+			"slug": "romlar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 390,
+		"slug": "urun168",
+		"image": "img/rom-gold.webp",
+		"price_parts": [ 390, 0 ]
+	},
+	{
+		"title": "BACARDİ (BERMUDA)",
+		"category": {
+			"name": "Romlar",
+			"slug": "romlar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 465,
+		"slug": "urun169",
+		"image": "img/cl.webp",
+		"price_parts": [ 465, 0 ]
+	},
+	{
+		"title": "CHİVAS REGAL 12 YEARS",
+		"category": {
+			"name": "Whiskey Scotch",
+			"slug": "whiskeyscotch"
+		},
+
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 460,
+		"slug": "urun170",
+		"image": "img/ChivasRegal.webp",
+		"price_parts": [ 460, 0 ]
+	},
+	{
+		"title": "CHİVAS REGAL 12 YEARS (Duble)",
+		"category": {
+			"name": "Whiskey Scotch",
+			"slug": "whiskeyscotch"
+		},
+
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 890,
+		"slug": "urun171",
+		"image": "img/ChivasRegal.webp",
+		"price_parts": [ 890, 0 ]
+	},
+	{
+		"title": "CHİVAS REGAL 18 YEARS",
+		"category": {
+			"name": "Whiskey Scotch",
+			"slug": "whiskeyscotch"
+		},
+
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 715,
+		"slug": "urun172",
+		"image": "img/ChivasRegal18.jpg",
+		"price_parts": [ 715, 0 ]
+	},
+	{
+		"title": "CHİVAS REGAL 18 YEARS (Duble)",
+		"category": {
+			"name": "Whiskey Scotch",
+			"slug": "whiskeyscotch"
+		},
+
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 1350,
+		"slug": "urun173",
+		"image": "img/ChivasRegal18.jpg",
+		"price_parts": [ 1350, 0 ]
+	},
+	{
+		"title": "J&W RED LABEL",
+		"category": {
+			"name": "Whiskey Scotch",
+			"slug": "whiskeyscotch"
+		},
+
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 420,
+		"slug": "urun174",
+		"image": "img/cl.webp",
+		"price_parts": [ 420, 0 ]
+	},
+	{
+		"title": "J&W RED LABEL (Duble)",
+		"category": {
+			"name": "Whiskey Scotch",
+			"slug": "whiskeyscotch"
+		},
+
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 785,
+		"slug": "urun175",
+		"image": "img/cl.webp",
+		"price_parts": [ 785, 0 ]
+	},
+	{
+		"title": "J&W BLACK LABEL",
+		"category": {
+			"name": "Whiskey Scotch",
+			"slug": "whiskeyscotch"
+		},
+
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 460,
+		"slug": "urun176",
+		"image": "img/cl.webp",
+		"price_parts": [ 460, 0 ]
+	},
+	{
+		"title": "J&W BLACK LABEL (Duble)",
+		"category": {
+			"name": "Whiskey Scotch",
+			"slug": "whiskeyscotch"
+		},
+
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 890,
+		"slug": "urun177",
+		"image": "img/cl.webp",
+		"price_parts": [ 890, 0 ]
+	},
+	{
+		"title": "J&W DOUBLE BLACK LABEL",
+		"category": {
+			"name": "Whiskey Scotch",
+			"slug": "whiskeyscotch"
+		},
+
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 505,
+		"slug": "urun178",
+		"image": "img/cl.webp",
+		"price_parts": [ 505, 0 ]
+	},
+	{
+		"title": "J&W BLUE LABEL",
+		"category": {
+			"name": "Whiskey Scotch",
+			"slug": "whiskeyscotch"
+		},
+
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 705,
+		"slug": "urun179",
+		"image": "img/cl.webp",
+		"price_parts": [ 705, 0 ]
+	},
+	{
+		"title": "JAMESON",
+		"category": {
+			"name": "Whiskey İrish",
+			"slug": "wishkeyirish"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 420,
+		"slug": "urun180",
+		"image": "img/jamerson.jpg",
+		"price_parts": [ 420, 0 ]
+	},
+	{
+		"title": "JAMESON (Duble)",
+		"category": {
+			"name": "Whiskey İrish",
+			"slug": "wishkeyirish"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 785,
+		"slug": "urun181",
+		"image": "img/jamerson.jpg",
+		"price_parts": [ 785, 0 ]
+	},
+	{
+		"title": "JAMESON BLACK BARREL",
+		"category": {
+			"name": "Whiskey İrish",
+			"slug": "wishkeyirish"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 445,
+		"slug": "urun182",
+		"image": "img/cl.webp",
+		"price_parts": [ 445, 0 ]
+	},
+	{
+		"title": "JAMESON BLACK BARREL (Duble)",
+		"category": {
+			"name": "Whiskey İrish",
+			"slug": "wishkeyirish"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 790,
+		"slug": "urun183",
+		"image": "img/cl.webp",
+		"price_parts": [ 790, 0 ]
+	},
+	{
+		"title": "SİNGLETON 12 YEARS",
+		"category": {
+			"name": "Wishkey Signel Malt",
+			"slug": "wishkey"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 575,
+		"slug": "urun184",
+		"image": "img/singleton-12-Yillik.png",
+		"price_parts": [ 575, 0 ]
+	},
+	{
+		"title": "SİNGLETON 12 YEARS (Duble)",
+		"category": {
+			"name": "Wishkey Signel Malt",
+			"slug": "wishkey"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 990,
+		"slug": "urun185",
+		"image": "img/singleton-12-Yillik.png",
+		"price_parts": [ 990, 0 ]
+	},
+	{
+		"title": "THE GLENLIVET 12 YEARS",
+		"category": {
+			"name": "Wishkey Signel Malt",
+			"slug": "wishkey"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 785,
+		"slug": "urun186",
+		"image": "img/cl.webp",
+		"price_parts": [ 785, 0 ]
+	},
+	{
+		"title": "THE GLENLIVET 12 YEARS (Duble)",
+		"category": {
+			"name": "Wishkey Signel Malt",
+			"slug": "wishkey"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 1350,
+		"slug": "urun187",
+		"image": "img/cl.webp",
+		"price_parts": [ 1350, 0 ]
+	},
+	{
+		"title": "TALISKER 10 YEARS",
+		"category": {
+			"name": "Wishkey Signel Malt",
+			"slug": "wishkey"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 745,
+		"slug": "urun188",
+		"image": "img/cl.webp",
+		"price_parts": [ 745, 0 ]
+	},
+	{
+		"title": "TALISKER 10 YEARS (Duble)",
+		"category": {
+			"name": "Wishkey Signel Malt",
+			"slug": "wishkey"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 1310,
+		"slug": "urun189",
+		"image": "img/cl.webp",
+		"price_parts": [ 1310, 0 ]
+	},
+	{
+		"title": "LAGAVULIN 12 YEARS",
+		"category": {
+			"name": "Wishkey Signel Malt",
+			"slug": "wishkey"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 1095,
+		"slug": "urun190",
+		"image": "img/cl.webp",
+		"price_parts": [ 1095, 0 ]
+	},
+	{
+		"title": "LAGAVULIN 12 YEARS (Duble)",
+		"category": {
+			"name": "Wishkey Signel Malt",
+			"slug": "wishkey"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 1850,
+		"slug": "urun191",
+		"image": "img/cl.webp",
+		"price_parts": [ 1850, 0 ]
+	},
+	{
+		"title": "JİM BEAM",
+		"category": {
+			"name": "Whiskey Bourbon",
+			"slug": "wishkeybourbon"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 440,
+		"slug": "urun192",
+		"image": "img/jimbeam.jpg",
+		"price_parts": [ 440, 0 ]
+	},
+	{
+		"title": "JİM BEAM (Duble)",
+		"category": {
+			"name": "Whiskey Bourbon",
+			"slug": "wishkeybourbon"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 790,
+		"slug": "urun193",
+		"image": "img/jimbeam.jpg",
+		"price_parts": [ 790, 0 ]
+	},
+	{
+		"title": "JACK DANİELS",
+		"category": {
+			"name": "Whiskey Bourbon",
+			"slug": "wishkeybourbon"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 460,
+		"slug": "urun194",
+		"image": "img/jack.webp",
+		"price_parts": [ 460, 0 ]
+	},
+	{
+		"title": "JACK DANİELS (Duble)",
+		"category": {
+			"name": "Whiskey Bourbon",
+			"slug": "wishkeybourbon"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 810,
+		"slug": "urun195",
+		"image": "img/jack.webp",
+		"price_parts": [ 810, 0 ]
+	},
+	{
+		"title": "GENTLEMAN JACK",
+		"category": {
+			"name": "Whiskey Bourbon",
+			"slug": "wishkeybourbon"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 695,
+		"slug": "urun196",
+		"image": "img/gentleman.jpg",
+		"price_parts": [ 695, 0 ]
+	},
+	{
+		"title": "GENTLEMAN JACK (Duble)",
+		"category": {
+			"name": "Whiskey Bourbon",
+			"slug": "wishkeybourbon"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 1100,
+		"slug": "urun197",
+		"image": "img/gentleman.jpg",
+		"price_parts": [ 1100, 0 ]
+	},
+	{
+		"title": "MARTİNİ BİANCO",
+		"category": {
+			"name": "Digestive",
+			"slug": "digestive"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 345,
+		"slug": "urun198",
+		"image": "img/Martini-Bianco.png",
+		"price_parts": [ 345, 0 ]
+	},
+	{
+		"title": "MARTİNİ EXTRA DRY",
+		"category": {
+			"name": "Digestive",
+			"slug": "digestive"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 345,
+		"slug": "urun199",
+		"image": "img/cl.webp",
+		"price_parts": [ 345, 0 ]
+	},
+	{
+		"title": "MARTİNİ ROSSO",
+		"category": {
+			"name": "Digestive",
+			"slug": "digestive"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 345,
+		"slug": "urun200",
+		"image": "img/cl.webp",
+		"price_parts": [ 345, 0 ]
+	},
+	{
+		"title": "APEROL",
+		"category": {
+			"name": "Digestive",
+			"slug": "digestive"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 345,
+		"slug": "urun201",
+		"image": "img/cl.webp",
+		"price_parts": [ 345, 0 ]
+	},
+	{
+		"title": "GRAPPA",
+		"category": {
+			"name": "Digestive",
+			"slug": "digestive"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 345,
+		"slug": "urun202",
+		"image": "img/cl.webp",
+		"price_parts": [ 345, 0 ]
+	},
+	{
+		"title": "CAMPARİ",
+		"category": {
+			"name": "Digestive",
+			"slug": "digestive"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 345,
+		"slug": "urun203",
+		"image": "img/cl.webp",
+		"price_parts": [ 345, 0 ]
+	},
+	{
+		"title": "HENNESY VS",
+		"category": {
+			"name": "Konyak",
+			"slug": "konyak"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 650,
+		"slug": "urun204",
+		"image": "img/Hennessy-VS-Cognac.jpg",
+		"price_parts": [ 650, 0 ]
+	},
+	{
+		"title": "HENNESY X.O",
+		"category": {
+			"name": "Konyak",
+			"slug": "konyak"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 850,
+		"slug": "urun205",
+		"image": "img/cl.webp",
+		"price_parts": [ 850, 0 ]
+	},
+	{
+		"title": "MARTELL V.S.",
+		"category": {
+			"name": "Konyak",
+			"slug": "konyak"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 715,
+		"slug": "urun206",
+		"image": "img/cl.webp",
+		"price_parts": [ 715, 0 ]
+	},
+	{
+		"title": "REMY MARTİN V.S.O.P",
+		"category": {
+			"name": "Konyak",
+			"slug": "konyak"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 1100,
+		"slug": "urun207",
+		"image": "img/cl.webp",
+		"price_parts": [ 1100, 0 ]
+	},
+	{
+		"title": "REMY MARTİN X.O",
+		"category": {
+			"name": "Konyak",
+			"slug": "konyak"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": 3100,
+		"slug": "urun208",
+		"image": "img/cl.webp",
+		"price_parts": [ 3100, 0 ]
+	},
+	{
+		"title": "SUVLA, CABERNET SAUVIGNON (ÇANAKKALE)",
+		"category": {
+			"name": "Kırmızı Şarap",
+			"slug": "kirmizisarap"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun209",
+		"image": "img/suvlasarap.webp",
+		"price_parts": [ "" ]
+	},
+	{
+		"title": "ANCYRA MERLOT (DENİZLİ BÖLGESİ)",
+		"category": {
+			"name": "Kırmızı Şarap",
+			"slug": "kirmizisarap"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun210",
+		"image": "img/cl.webp",
+		"price_parts": [ "" ]
+	},
+	{
+		"title": "ANCYRA C. SAUVİGNON SYRAH (İZMİR ÇEŞME BÖLGESİ)",
+		"category": {
+			"name": "Kırmızı Şarap",
+			"slug": "kirmizisarap"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun211",
+		"image": "img/cl.webp",
+		"price_parts": [ "" ]
+	},
+	{
+		"title": "SELECTİON ÖKÜZGÖZÜ BOĞAZKERE (DOĞU ANADOLU BÖLGESİ)",
+		"category": {
+			"name": "Kırmızı Şarap",
+			"slug": "kirmizisarap"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun212",
+		"image": "img/cl.webp",
+		"price_parts": [ "" ]
+	},
+	{
+		"title": "SANTA HELENA CABARNET SAUVİGNON (ŞİLİ)",
+		"category": {
+			"name": "Kırmızı Şarap",
+			"slug": "kirmizisarap"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun213",
+		"image": "img/cl.webp",
+		"price_parts": [ "" ]
+	},
+	{
+		"title": "SUVLA, KINALI YAPINCAK (ÇANAKKALE)",
+		"category": {
+			"name": "Beyaz Şarap",
+			"slug": "beyazsarap"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun214",
+		"image": "img/suvla.jpeg",
+		"price_parts": [ "" ]
+	},
+	{
+		"title": "SARTORİ PİNOT GRİGİO(FRANSA)",
+		"category": {
+			"name": "Beyaz Şarap",
+			"slug": "beyazsarap"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun215",
+		"image": "img/cl.webp",
+		"price_parts": [ "" ]
+	},
+	{
+		"title": "EGEO CHARDONNAY (EGE BÖLGESİ)",
+		"category": {
+			"name": "Beyaz Şarap",
+			"slug": "beyazsarap"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun216",
+		"image": "img/cl.webp",
+		"price_parts": [ "" ]
+	},
+	{
+		"title": "SELECTİON NARİNCE EMİR (NEVŞEHİR)",
+		"category": {
+			"name": "Beyaz Şarap",
+			"slug": "beyazsarap"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun217",
+		"image": "img/cl.webp",
+		"price_parts": [ "" ]
+	},
+	{
+		"title": "SANTA HELENA SAUVİGNON BLANC (ŞİLİ)",
+		"category": {
+			"name": "Beyaz Şarap",
+			"slug": "beyazsarap"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun218",
+		"image": "img/cl.webp",
+		"price_parts": [ "" ]
+	},
+	{
+		"title": "İSABEY SYRAH KALECİK KARASI (EGE BÖLGESİ)",
+		"category": {
+			"name": "Rose Şaraplar",
+			"slug": "rosesaraplar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun219",
+		"image": "img/sevilen-isabey-kalecik-karasi.webp",
+		"price_parts": [ "" ]
+	},
+	{
+		"title": "SUVLA BLUSH KARASAKIZ (ÇANAKKALE)",
+		"category": {
+			"name": "Rose Şaraplar",
+			"slug": "rosesaraplar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun220",
+		"image": "img/cl.webp",
+		"price_parts": [ "" ]
+	},
+	{
+		"title": "SARTORİ PİNOT GRİGİO BLUSH(FRANSA)",
+		"category": {
+			"name": "Rose Şaraplar",
+			"slug": "rosesaraplar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun221",
+		"image": "img/cl.webp",
+		"price_parts": [ "" ]
+	},
+	{
+		"title": "MONCİGALE BLUSH (FRANCE)",
+		"category": {
+			"name": "Rose Şaraplar",
+			"slug": "rosesaraplar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun222",
+		"image": "img/cl.webp",
+		"price_parts": [ "" ]
+	},
+	{
+		"title": "MON REVE PROSECCO",
+		"category": {
+			"name": "Şampanyalar",
+			"slug": "sampanyalar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun223",
+		"image": "img/monreve.jpeg",
+		"price_parts": [ "" ]
+	},
+	{
+		"title": "İNCİ DAMLASI (EGE BÖLGESİ)",
+		"category": {
+			"name": "Şampanyalar",
+			"slug": "sampanyalar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun224",
+		"image": "img/cl.webp",
+		"price_parts": [ "" ]
+	},
+	{
+		"title": "MOET & CHANDON BRUT IMPERİAL (FRANCE)",
+		"category": {
+			"name": "Şampanyalar",
+			"slug": "sampanyalar"
+		},
+		"ingredients": "",
+		"is_featured": "",
+		"is_pinned": "",
+		"price": "",
+		"slug": "urun225",
+		"image": "img/cl.webp",
+		"price_parts": [ "" ]
+	}
+]
+
